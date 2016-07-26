@@ -1,0 +1,112 @@
+/* Imports */
+@import url("reset.css");
+@charset "utf-8";
+
+body {
+	width: 100% !important;
+	height: 100% !important;
+	line-height: 1.5em;
+	font-size:18px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	background-color: #1f1f1f;
+}
+
+
+.container {
+	width: 100% !important;
+	height: 100% !important;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: justify;
+	color: #1f1f1f;
+}
+
+.leftDiv {
+	min-width: 220px;
+	height:100%;
+	background-color: #1f1f1f;
+	float: left;
+	padding: 0;
+	margin: 0;
+	z-index: 10;
+	color: #fff;
+	background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	overflow-x:scroll;
+}
+
+	.logo {
+		margin: auto;
+		padding: 15px 0 0 32px;
+	}
+
+	.leftDiv ul {
+		padding: 0;
+		margin: 0;
+		background-color: #121212;
+	}
+
+	.leftDiv li {
+		list-style:none;
+		font-variant: small-caps;
+		padding: .5em;
+		font-size:16px;
+		font-weight: normal;
+		display: block;
+		background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+		border-top: 1px solid #2c2c2c;
+		border-bottom: 1px solid #121212;
+		text-align: center;
+	}
+
+	.leftDiv li.helpItems {
+		background-color: #be1238;
+		padding: 0.25em;
+		border-top: 1px solid #690500;
+		border-bottom: 1px solid #540400;
+	}
+
+	.leftDiv li.subTitle {
+		background-color: #0097fe;
+		padding: 0.25em;
+		border-top: 1px solid #121212;
+		border-bottom: 1px solid #2c2c2c;
+	}
+
+	.leftDiv hr {
+		border: 1px solid #454545;
+		margin: 1px;
+	}
+
+	.contactInfo {
+		font-variant: small-caps;
+		padding: 1em;
+		font-size:16px;
+		font-weight: normal;
+		display: block;
+		background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+		border-top: 1px solid #2c2c2c;
+		border-bottom: 1px solid #121212;
+		text-align: center;
+		margin: 0;
+	}
+
+.rightDiv {
+	height: 100%;
+	width: 80%;
+	float: left;
+	z-index: 1;
+	background-color: #fff;
+}
+
+	.inner-section {
+		max-width: 100%;
+		padding: 0 25px;
+		margin: 0;
+		border: 1px dashed grey;
+	}
+
