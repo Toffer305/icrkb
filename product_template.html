@@ -10,12 +10,13 @@
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/font.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/product.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/icons.css" type="text/css" media="all">
 	<div class="productDiv">
 		<div class="inner-section">
 			<h1>Product Template</h1>
-			<a href=index.html> Index </a> | 
-			<a href=http://www.icrealtime.com/support> Support Home </a> | 
-			<a href=http://www.icrealtime.com/forum> Forums </a>
+			<a href=index.html> Index</a> | 
+			<a href=http://www.icrealtime.com/support> Support Home</a> | 
+			<a href=http://www.icrealtime.com/forum> Forums</a>
 			<hr>
 			<p>
 			The following block is a friendly product "blurb".  It's purpose is to sensationalize, advertise, hype, and portray the strengths of the product in question.  It should loosely cover limitations of the device as well.
@@ -38,13 +39,13 @@
 								<a href="#docs_qsg">Quick Start Guides</a>
 							</li>
 							<li>
-								<a href="docs_data">Data Sheets</a>
+								<a href="#docs_data">Data Sheets</a>
 							</li>
 							<li>
-								<a href="docs_man">Manuals</a>
+								<a href="#docs_man">Manuals</a>
 							</li>
 							<li>
-								<a href="docs_faq">FAQS</a>
+								<a href="#docs_faq">FAQS</a>
 							</li>			
 						</ul>
 					<li>
@@ -67,6 +68,7 @@
 						<ul class="toc_indent1">
 							<li>
 								<a href="#sw_user">User/Client Software</a>
+								
 							</li>
 							<li>
 								<a href="#sw_config">Installation Software and Utilities</a>
@@ -87,11 +89,13 @@
 			
 			<h2> Specifications </h2>
 			
-			<!-- TF am I doing wrong with Table Borders? -->
-			<table>
-			<tr>
-				<td width="25" style="border: solid 1px rgb(140);">stuff</td>
-			</tr>
+			<table class="spec_table">
+				<tr>
+					<th class="spec_table"> Product Name </th>
+				<tr>
+					<td class="spec_table" width="25">stuff 1</td>
+					<td class="spec_table" width="25">stuff 2</td>
+				</tr>
 			</table>
 			
 			<div class="docs">
@@ -108,13 +112,16 @@
 			</div>
 			<h2> Images </h2>
 			
-			
+						
 			<div class="software">
 				<span>
 					<a class="mark" href="#software" id="software">#SOFTWARE</a>
 				</span>
 			</div>
 			<h2> Software </h2>
-			
+
+			<div class="support_widgets">
+				<span class="icon icon-product_manual thumb"></span>
+			</div>
 </body>
 </html>
