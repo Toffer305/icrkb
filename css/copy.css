@@ -13,6 +13,7 @@ body {
 	background-color: #1f1f1f;
 }
 
+
 .container {
 	width: 100% !important;
 	height: 100% !important;
@@ -26,10 +27,10 @@ body {
 }
 
 nav {
-	width: 248px;
+	width: 220px;
 	height:100%;
 	float: left;
-	padding: 0 10px;
+	padding: 0;
 	margin: 0;
 	z-index: 1;
 	color: #fff;
@@ -38,9 +39,70 @@ nav {
 }
 
 	.logo {
-		padding: 15px 0 0 48px;
+		padding: 15px 0 0 32px;
 	}
 
+	.mainmenu, .submenu, .submenu2, .submenu3 {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.mainmenu a {
+		display: block;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.mainmenu a:hover {
+		background-color: #454545;
+	}
+
+	.mainmenu li:hover .submenu,
+	.submenu li:hover .submenu2,
+	.submenu2 li:hover .submenu3 {
+		display: block;
+		max-height: 100%;
+	}
+
+	.submenu a{
+		background-color: #6b6b6b;
+		padding-left: 10px;
+		font-size: .75em;
+	}
+	
+	.submenu2 a {
+		background-color: #919191;
+		padding-left: 10px;
+		font-size: .75em;
+	}
+	
+	.submenu3 a {
+		background-color: #000;
+		color: #fff;
+		padding-left: 10px;
+		font-size: .75em;
+	}
+
+	.submenu a:hover {
+		
+	}
+	
+	.submenu2 a:hover {
+		
+	}
+	
+	.submenu3 a:hover {
+		
+	}
+
+	.submenu, .submenu2, .submenu3 {
+		overflow: hidden;
+		max-height: 0;
+		-webkit-transition: all 0.5s ease-out;
+	}
+	
+	
 	nav ul {
 		list-style: none;
 		padding: 0;
@@ -58,56 +120,6 @@ nav {
 	nav hr {
 		border: 1px solid #454545;
 		margin: 3px;
-	}
-
-	/* Checkbox Hack */
-
-	input[type=checkbox] {
-	   position: absolute;
-	   top: -9999px;
-	   left: -9999px;
-	}
-	label { 
-		cursor: pointer;
-		font-variant: small-caps;
-		font-weight: normal;		
-		display: block;
-		text-decoration: none;
-		color: #fff
-		background-color: #1f1f1f;
-	}
-
-	/* Default State */
-	div.lvl-1-div,
-	div.lvl-2-div,
-	div.lvl-3-div,
-	div.lvl-4-div {
-		display: none;
-	}
-
-	/* Toggled State */
-	.lvl-1-input[type=checkbox]:checked ~ div.lvl-1-div {
-		display: block;
-		padding-left: 5px;
-		background-color: #393939;
-	}
-	
-	.lvl-2-input[type=checkbox]:checked ~ div.lvl-2-div {
-		display: block;
-		padding-left: 5px;
-		background-color: #454545;	
-	}
-	
-	.lvl-3-input[type=checkbox]:checked ~ div.lvl-3-div {
-	   display: block;
-	   padding-left: 5px;
-	   background-color: #6b6b6b;
-	}
-	
-	.lvl-4-input[type=checkbox]:checked ~ div.lvl-4-div {
-	   display: block;
-	   padding-left: 5px;
-	   background-color: #919191;
 	}
 
 	.contactInfo {
