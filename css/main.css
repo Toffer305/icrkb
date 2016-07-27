@@ -63,7 +63,7 @@ body {
 	}
 
 		.leftDiv li:hover{
-			background-color: #454545;
+			background-color: #2c2c2c;
 		}
 	
 	.leftDiv li.helpItems {
@@ -80,13 +80,13 @@ body {
 	.leftDiv li.subTitle {
 		background-color: #0097fe;
 		padding: 0.25em;
-		border-top: 1px solid #121212;
-		border-bottom: 1px solid #2c2c2c;
+		border-top: 1px solid #00acfe;
+		border-bottom: 1px solid #0082fe;
 	}
 
 	.leftDiv hr {
 		border: 1px solid #454545;
-		margin: 1px;
+		margin: 3px;
 	}
 
 	.contactInfo {
