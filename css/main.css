@@ -26,7 +26,7 @@ body {
 	color: #1f1f1f;
 }
 
-.leftDiv {
+nav {
 	width: 220px;
 	height:100%;
 	float: left;
@@ -43,13 +43,15 @@ body {
 		padding: 15px 0 0 32px;
 	}
 
-	.leftDiv ul {
+	nav ul {
 		padding: 0;
 		margin: 0;
 		background-color: #121212;
+		position:relative;
+		z-index:-1;
 	}
 
-	.leftDiv li {
+	nav li {
 		list-style:none;
 		font-variant: small-caps;
 		padding: .5em;
@@ -60,31 +62,33 @@ body {
 		border-top: 1px solid #2c2c2c;
 		border-bottom: 1px solid #121212;
 		text-align: center;
+		position:relative;
+		z-index:100;
 	}
 
-		.leftDiv li:hover{
+		nav li:hover{
 			background-color: #2c2c2c;
 		}
 	
-	.leftDiv li.helpItems {
+	nav li.helpItems {
 		background-color: #be1238;
 		padding: 0.25em;
 		border-top: 1px solid #690500;
 		border-bottom: 1px solid #540400;
 	}
 	
-		.leftDiv li.helpItems:hover{
+		nav li.helpItems:hover{
 			background-color: #540400;
 		}
 
-	.leftDiv li.subTitle {
+	nav li.subTitle {
 		background-color: #0097fe;
 		padding: 0.25em;
 		border-top: 1px solid #00acfe;
 		border-bottom: 1px solid #0082fe;
 	}
 
-	.leftDiv hr {
+	nav hr {
 		border: 1px solid #454545;
 		margin: 3px;
 	}
