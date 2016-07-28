@@ -127,7 +127,31 @@ nav {
 		text-decoration: none;
 		color: #fff;
 	}
+	
+	nav li:hover {
+		background: #454545;
+	}
+	
+	nav .lvl-1-menu li:hover {
+		background: #454545;
+	}
 
+	nav .lvl-2-menu li:hover {
+		background: #6b6b6b;
+	}
+	
+	nav .lvl-3-menu li:hover {
+		background: #919191;
+	}
+	
+	nav .lvl-4-menu li:hover {
+		background: #b7b7b7;
+	}
+	
+	nav .lvl-5-menu li:hover {
+		background: #393939;
+	}
+	
 	/* Checkbox Hack */
 		input[type=checkbox] {
 		   position: absolute;
