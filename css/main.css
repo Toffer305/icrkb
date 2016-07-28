@@ -132,6 +132,12 @@ nav {
 		font-variant: small-caps;
 	}
 
+	.supportHelper {
+		display: block;
+		font-weight: normal;
+		font-variant: small-caps;
+}
+
 .rightDiv {
 	height: 100%;
 	width: 80%;
