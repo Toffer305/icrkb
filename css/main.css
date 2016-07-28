@@ -3,6 +3,15 @@
 @charset "utf-8";
 
 /* General CSS */
+* {
+	/* adds animation for all transitions */
+	-webkit-transition: .25s ease;
+	-moz-transition: .25s ease;
+	-o-transition: .25s ease;
+	transition: .25s ease;
+	-webkit-text-size-adjust: none;
+}
+
 body {
 	width: 100% !important;
 	height: 100% !important;
