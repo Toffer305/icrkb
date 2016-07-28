@@ -2,6 +2,7 @@
 @import url("reset.css");
 @charset "utf-8";
 
+/* General CSS */
 body {
 	width: 100% !important;
 	height: 100% !important;
@@ -30,6 +31,7 @@ a {
 	cursor: pointer;
 }
 
+/* NAVIGATION SECTION - left side */
 nav {
 	width: 248px;
 	height:100%;
@@ -39,13 +41,19 @@ nav {
 	z-index: 1;
 	color: #fff;
 	background-color: #1f1f1f;
-	overflow-x:scroll;
+	overflow-y:scroll;
+
 }
 
 	.logo {
 		padding: 15px 0 0 48px;
 	}
 
+	nav hr {
+		border: 1px solid #454545;
+		margin: 3px;
+	}
+	
 	nav ul {
 		list-style: none;
 		padding: 0;
@@ -60,68 +68,65 @@ nav {
 		color: #fff;
 	}
 
-	nav hr {
-		border: 1px solid #454545;
-		margin: 3px;
-	}
-
 	/* Checkbox Hack */
+		input[type=checkbox] {
+		   position: absolute;
+		   top: -9999px;
+		   left: -9999px;
+		}
+		label { 
+			cursor: pointer;
+			font-variant: small-caps;
+			font-weight: normal;		
+			display: block;
+			text-decoration: none;
+			color: #fff
+			background-color: #1f1f1f;
+		}
 
-	input[type=checkbox] {
-	   position: absolute;
-	   top: -9999px;
-	   left: -9999px;
-	}
-	label { 
-		cursor: pointer;
-		font-variant: small-caps;
-		font-weight: normal;		
-		display: block;
-		text-decoration: none;
-		color: #fff
-		background-color: #1f1f1f;
-	}
-
-	/* Default State */
-	div.lvl-1-div,
-	div.lvl-2-div,
-	div.lvl-3-div,
-	div.lvl-4-div,
-	div.lvl-5-div {
-		display: none;
-	}
-
-	/* Toggled State */
-	.lvl-1-input[type=checkbox]:checked ~ div.lvl-1-div {
-		display: block;
-		padding-left: 5px;
-		background-color: #393939;
-	}
+		/* Default State */
+			div.lvl-1-div,
+			div.lvl-2-div,
+			div.lvl-3-div,
+			div.lvl-4-div,
+			div.lvl-5-div {
+				display: none;
+			}
+		/* /Default State */
+		
+		/* Toggled State */
+			.lvl-1-input[type=checkbox]:checked ~ div.lvl-1-div {
+				display: block;
+				padding-left: 5px;
+				background-color: #393939;
+			}
+			
+			.lvl-2-input[type=checkbox]:checked ~ div.lvl-2-div {
+				display: block;
+				padding-left: 5px;
+				background-color: #454545;	
+			}
+			
+			.lvl-3-input[type=checkbox]:checked ~ div.lvl-3-div {
+			   display: block;
+			   padding-left: 5px;
+			   background-color: #6b6b6b;
+			}
+			
+			.lvl-4-input[type=checkbox]:checked ~ div.lvl-4-div {
+			   display: block;
+			   padding-left: 5px;
+			   background-color: #919191;
+			}
+			
+			.lvl-5-input[type=checkbox]:checked ~ div.lvl-5-div {
+			   display: block;
+			   padding-left: 5px;
+			   background-color: #b7b7b7;
+			}
+		/* /Toggled State */
+	/* /checkbox hack */
 	
-	.lvl-2-input[type=checkbox]:checked ~ div.lvl-2-div {
-		display: block;
-		padding-left: 5px;
-		background-color: #454545;	
-	}
-	
-	.lvl-3-input[type=checkbox]:checked ~ div.lvl-3-div {
-	   display: block;
-	   padding-left: 5px;
-	   background-color: #6b6b6b;
-	}
-	
-	.lvl-4-input[type=checkbox]:checked ~ div.lvl-4-div {
-	   display: block;
-	   padding-left: 5px;
-	   background-color: #919191;
-	}
-	
-	.lvl-5-input[type=checkbox]:checked ~ div.lvl-5-div {
-	   display: block;
-	   padding-left: 5px;
-	   background-color: #b7b7b7;
-	}
-
 	.contactInfo {
 		margin: 0;
 		padding: 1em;
@@ -131,14 +136,9 @@ nav {
 		text-align: center;
 		font-variant: small-caps;
 	}
+/* /NAVIGATION SECTION - left side */
 
-	.supportHelper {
-		display: block;
-		font-weight: normal;
-		font-variant: small-caps;
-		color: white;
-}
-
+/* MAIN SECTION - right side */
 .rightDiv {
 	height: 100%;
 	width: 80%;
@@ -160,6 +160,7 @@ nav {
 		font-variant: small-caps;
 	}
 	
+	/* IFRAME SECTION */
 	#mainFrame {
 		
 	}
@@ -169,4 +170,11 @@ nav {
 		height: 100% !important;
 		min-height: 500px;
 	}
+	/* /IFRAME SECTION */
+/* /MAIN SECTION - right side */
 
+
+/* CLEAN UP & MAINTAINANCE */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }

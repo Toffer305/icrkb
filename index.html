@@ -12,32 +12,45 @@
 	</head>
 
 	<body>
+		<!-- container for the entire site -->
 		<div class="container">
+			
+			<!-- nav defines the left side navigation section -->
 			<nav>
-			<img src="images/logo.png" alt="IC Realtime" class="logo" />
+				<a href="http://icrealtime.com" target="_blank"><img src="images/logo.png" alt="IC Realtime" class="logo" /></a>
 			<hr>
+				<!-- unordered list for KNOWLEDGE BASE HELP items - defined as menulvl1 -->
 				<ul class="menulvl1">
 					<a href="about-these-docs.html" target="mainframe"><li>About these Docs</li></a>
 					<a href="usage-and-examples.html" target="mainframe"><li>Usage & Examples</li></a>
 				</ul>
 			<hr>
+				<!-- unordered list for white papers - defined as menulvl1 - may change to drop down menus -->
 				<ul class="menulvl1">
 					<a href="whitepapers-landing.html" target="mainframe"><li>White Papers</li></a>
 				</ul>
 			<hr>
+				<!-- drop down menus for the PRODUCT DOCUMENTATION section - uses checkbox hack - valid classes include:
+					lvl-1-menu,		lvl-2-menu, 	lvl-3-menu, 	lvl-4-menu, 	lvl-5-menu,
+					lvl-1-div,		lvl-2-div, 		lvl-3-div, 		lvl-4-div, 		lvl-5-div,
+					lvl-1-input, 	lvl-2-input, 	lvl-3-input, 	lvl-4-input, 	lvl-5-input -->
 			<div id="discloserMenus">
+				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
 					<li><label for="product-docs">Product Documentation</label>
 					<input type="checkbox" id="product-docs" class="lvl-1-input">
 						<div class="lvl-1-div">
+							<!-- LVL2 -->
 							<ul class="lvl-2-menu">
 								<li><label for="analog-systems">Analog Systems</label>
 								<input type="checkbox" id="analog-systems" class="lvl-2-input">
 									<div class="lvl-2-div">
+										<!-- LVL3 -->
 										<ul class="lvl-3-menu">
 											<li><label for="analog-cameras">Analog Cameras</label>
 											<input type="checkbox" id="analog-cameras" class="lvl-3-input">
 												<div class="lvl-3-div">
+													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
 														<li><label for="analog-box-cameras">Box Cameras</label>
 														<input type="checkbox" id="analog-box-cameras" class="lvl-4-input">
@@ -108,6 +121,7 @@
 														</li>
 														
 													</ul>
+													<!-- /LVL4 -->
 												</div>
 											</li>
 											<li><label for="analog-recorders">Analog Recorders</label>
@@ -150,16 +164,19 @@
 												</div>
 											</li>
 										</ul>
+										<!-- LVL3 -->
 									</div>
 								</li>
 								
 								<li><label for="hdavs-systems">HD AVS Systems</label>
 								<input type="checkbox" id="hdavs-systems" class="lvl-2-input">
 									<div class="lvl-2-div">
+										<!-- LVL3 -->
 										<ul class="lvl-3-menu">
 											<li><label for="hdavs-cameras">HD AVS Cameras</label>
 											<input type="checkbox" id="hdavs-cameras" class="lvl-3-input">
 												<div class="lvl-3-div">
+													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
 														<li><label for="hdavs-box-cameras">HD AVS Box Cameras</label>
 														<input type="checkbox" id="hdavs-box-cameras" class="lvl-4-input">
@@ -205,11 +222,13 @@
 															</div>
 														</li>								
 													</ul>
+													<!-- /LVL4 -->
 												</div>
 											</li>
 											<li><label for="hdavs-recorders">HD AVS Recorders</label>
 											<input type="checkbox" id="hdavs-recorders" class="lvl-3-input">
 												<div class="lvl-3-div">
+													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
 														<li><label for="hdavs-800-series">AVR 800 Series</label>
 														<input type="checkbox" id="hdavs-800-series" class="lvl-4-input">
@@ -252,38 +271,50 @@
 															</div>
 														</li>
 													</ul>
+													<!-- /LVL4 -->
 												</div>
 											</li>
 										</ul>
+										<!-- /LVL3 -->
 									</div>
 								</li>
 							</ul>
+							<!-- /LVL2 -->
 						</div>
 					</li>
 				</ul>
+				<!-- /LVL1 -->
 			</div>
 			<hr>
-				<p class="supportHelper">
-					<a class="supportHelper" href="http://192.168.1.245/redmine">Redmine PM</a>
-				<p>
-					<a class="supportHelper" href="ftp://192.168.1.245">Firmware FTP Site</a>
-				<p>
-					<a class="supportHelper" href="http://192.168.1.245/redmine/cotd.html">SuperPassword Generator</a>
+				<!-- unordered list for IC REALTIME TECH TOOLS section -->
+				<ul class="menulvl1">
+					<a href="http://192.168.1.245/redmine" target="_blank"><li>Redmine PM</li></a>
+					<a href="ftp://192.168.1.245" target="mainframe"><li>Firmware FTP Site</li></a>
+					<a href="http://192.168.1.245/redmine/cotd.html" target="_blank"><li>SuperPassword Generator</li></a>
+				</ul>
 			<hr>
+				<!-- bottom of the navigation section listing contact info -->
 				<p class="contactInfo">
 					<b>Tech Support</b><br />
 					954-772-5327<br />
 					tech@icrealtime.com
 				</p>
 			</nav>
+			<!-- /nav defines the left side navigation section -->
+			
+			<!-- defines the right side section -->
 			<div class="rightDiv">
 				<div class="inner-section">
 					<h1>Knowledge Base: Documentation</h1>
 					<hr>
+					<!-- Basic welcome blurb with any pertenant info listed -->
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<hr>
+					<!-- iframe linked to navigation items on left side - plan to replace with dynamically generated content pulled from a dB -->
 					<iframe id="mainframe" name="mainframe" class="frameclass" src="about-these-docs.html" ></iframe>
 					<hr>
+					<!-- footer type section on the bottom of the right side div -->
+					<p>&nbsp;</p>
 				</div>
 			</div>
 		</div>
