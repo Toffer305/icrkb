@@ -115,7 +115,7 @@ body {
 		margin: 0;
 	}
 	
-		.toc_indent1 {
+		.indent1 {
 			padding-left: 30px;
 		}
 		
@@ -142,11 +142,11 @@ body {
 	text-align: right;
 }
 
-.spec_head {
-	border: 1px solid #1f1f1f
-}
-
 .spec_table {
 	border: 1px solid #1f1f1f;
 	margin: auto;
+}
+
+.padded_break{
+	padding: 15px;
 }
