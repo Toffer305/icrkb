@@ -43,43 +43,37 @@ h2 {
 	font-weight: bolder;
 	font-variant: small-caps;
 }
+
+.content-section {
+	width: 90%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #1f1f1f;
+}
 /* /General CSS */
 
-/* PRODUCT SECTION */
-	.productDiv {
-		height: 100%;
-		width: 90%;
-		float: left;
-		z-index: 1;
-		background-color: #fff;
-	}
-		
-	.productDiv .indent1 {
+/* PRODUCT SECTION */	
+	.indent1 {
 		padding-left: 30px;
 	}
 
-	.productDiv .docs, .productDiv .specs, .productDiv .images, .productDiv .software {
+	.docs, .specs, .images, .software {
 		text-align: right;
 	}
 
-	.productDiv .spec_table {
+	.spec_table {
 		border: 1px solid #1f1f1f;
 		margin: auto;
 	}
 
-	.productDiv .padded_break{
+	.padded_break{
 		padding: 15px;
 	}
 /* /PRODUCT SECTION */
 
 
 /* WHITEPAPER SECTION */
-.whitepaper-section {
-	width: 90%;
-	height: 100%;
-	margin: auto;
-	padding: 0;
-	background: #fff;
-	color: #1f1f1f;
-}
+
 /* WHITEPAPER SECTION */
