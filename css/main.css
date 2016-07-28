@@ -65,7 +65,7 @@ img {
 
 .videoWrapper {
 	position: relative;
-	padding-bottom: 50%; /* 16:9 */
+	padding-bottom: 56.25%; /* 16:9 */
 	height: 0;
 }
 .videoWrapper iframe {
@@ -209,18 +209,7 @@ nav {
 		font-weight: bolder;
 		font-variant: small-caps;
 	}
-	
-	/* IFRAME SECTION */
-	#mainFrame {
-		
-	}
-	
-	.frameclass {
-		width: 100% !important;
-		height: 100% !important;
-		min-height: 500px;
-	}
-	/* /IFRAME SECTION */
+
 /* /MAIN SECTION - right side */
 
 
