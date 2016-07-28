@@ -25,12 +25,13 @@ h1 {
 	font-size:2em;
 	font-weight: bolder;
 	font-variant: small-caps;
+	text-align: left;
 }
 
 .whitepaper-section {
-	width: 80%;
+	width: 90%;
 	height: 100%;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	background: #fff;
 	color: #1f1f1f;
