@@ -30,15 +30,25 @@
 					<a href="usage-examples.html" target="mainframe"><li>Usage & Examples</li></a>
 				</ul>
 			<hr>
-				<!-- unordered list for white papers - defined as menulvl1 - may change to drop down menus -->
-				<ul class="menulvl1">
-					<a href="whitepapers-landing.html" target="mainframe"><li>White Papers</li></a>
-				</ul>
-			<hr>
-				<!-- drop down menus for the PRODUCT DOCUMENTATION section - uses checkbox hack - valid classes include:
+			
+				<!-- drop down menus for the WHITE PAPERS section - uses checkbox hack - valid classes include:
 					lvl-1-menu,		lvl-2-menu, 	lvl-3-menu, 	lvl-4-menu, 	lvl-5-menu,
 					lvl-1-div,		lvl-2-div, 		lvl-3-div, 		lvl-4-div, 		lvl-5-div,
 					lvl-1-input, 	lvl-2-input, 	lvl-3-input, 	lvl-4-input, 	lvl-5-input -->
+				<!-- LVL1 -->
+				<ul class="lvl-1-menu">
+					<li><label for="white-papers">White&nbsp;Papers</label>
+					<input type="checkbox" id="white-papers" class="lvl-1-input">
+						<div class="lvl-1-div">
+							<!-- LVL2 -->
+							<ul class="lvl-2-menu">
+								<a href="" target="mainframe"><li>&nbsp;</li></a>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			<hr>
+				<!-- drop down menus for the PRODUCT DOCUMENTATION section - uses checkbox hack -->
 			<div id="discloserMenus">
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
@@ -291,13 +301,36 @@
 				<!-- /LVL1 -->
 			</div>
 			<hr>
-				<!-- unordered list for IC REALTIME TECH TOOLS section -->
+				<!-- drop down menus for the IC REALTIME TECH TOOLS section - uses checkbox hack -->
+				<!-- LVL1 -->
+				<ul class="lvl-1-menu">
+					<li><label for="tech-tools">Tech&nbsp;Tools</label>
+					<input type="checkbox" id="tech-tools" class="lvl-1-input">
+						<div class="lvl-1-div">
+							<!-- LVL2 -->
+							<ul class="lvl-2-menu">
+								<a href="http://192.168.1.245/redmine/cotd.html" target="mainframe">
+									<li>Password Generator</li></a>
+								<a href="https://docs.google.com/spreadsheets/d/18r1tpycqd_DmmQdkYyTIGbCzjwoAeOct3LgQ8uqS9ew/edit#gid=281915184" target="mainframe">
+									<li>3rd Party Chart</li></a>
+								<a href="https://docs.google.com/spreadsheets/d/1hJ0kgwDJVX_dK4tJTEhRcVwWbQ7C4BFM7EecB8bqzcc" target="mainframe">
+									<li>HDD Chart</li></a>
+								<a href="https://docs.google.com/spreadsheets/d/1hJ0kgwDJVX_dK4tJTEhRcVwWbQ7C4BFM7EecB8bqzcc" target="mainframe">
+									<li>RS232 Codes</li></a>
+								<a href="https://docs.google.com/spreadsheets/d/1hJ0kgwDJVX_dK4tJTEhRcVwWbQ7C4BFM7EecB8bqzcc" target="mainframe">
+									<li>CGI Codes</li></a>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			<hr>
+				<!-- unordered list for LINKS section -->
 				<ul class="menulvl1">
 					<a href="http://192.168.1.245/redmine" target="_blank"><li>Redmine PM</li></a>
 					<a href="ftp://192.168.1.245" target="mainframe"><li>Firmware FTP Site</li></a>
-					<a href="http://192.168.1.245/redmine/cotd.html" target="mainframe"><li>Password Generator</li></a>
+					
 				</ul>
-			<hr>
+			<hr>			
 				<!-- bottom of the navigation section listing contact info -->
 				<p class="contactInfo">
 					<b>Tech Support</b><br />
