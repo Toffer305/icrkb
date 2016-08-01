@@ -10,6 +10,21 @@
 		<link rel='stylesheet' href='css/responsive.css' type='text/css' media="screen and (max-width: 1400px)" />
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel='stylesheet' href='css/social.css' type='text/css' media='all' />
+		
+		<script>
+		function productInfoFunction() {
+			document.getElementById("mainframe").src = "products-landing.html";
+		}
+		function softwareFunction() {
+			document.getElementById("mainframe").src = "software-landing.html";
+		}
+		function techToolsFunction() {
+			document.getElementById("mainframe").src = "tech-tools-landing.html";
+		}
+		function whitePaperFunction() {
+			document.getElementById("mainframe").src = "whitepapers-landing.html";
+		}
+		</script>
 	</head>
 
 	<body>
@@ -40,7 +55,7 @@
 			<div id="discloserMenus">
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
-					<li><label for="product-docs">Product&nbsp;Documentation</label>
+					<li><label for="product-docs" onclick="productInfoFunction()">Product&nbsp;Documentation</label>
 					<input type="checkbox" id="product-docs" class="lvl-1-input">
 						<div class="lvl-1-div">
 							<!-- LVL2 -->
@@ -445,7 +460,7 @@
 				<!-- drop down menus for the SOFTWARE section - uses checkbox hack -->
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
-					<li><label for="software">Software</label>
+					<li><label for="software" onclick="softwareFunction()">Software</label>
 					<input type="checkbox" id="software" class="lvl-1-input">
 						<div class="lvl-1-div">								
 							<ul>
@@ -461,7 +476,7 @@
 				<!-- drop down menus for the IC REALTIME TECH TOOLS section - uses checkbox hack -->
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
-					<li><label for="tech-tools">Tech&nbsp;Tools</label>
+					<li><label for="tech-tools" onclick="techToolsFunction()">Tech&nbsp;Tools</label>
 					<input type="checkbox" id="tech-tools" class="lvl-1-input">
 						<div class="lvl-1-div">
 							<!-- LVL2 -->
@@ -488,7 +503,7 @@
 			<hr>
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
-					<li><label for="white-papers">White&nbsp;Papers</label>
+					<li><label for="white-papers" onclick="whitePaperFunction()">White&nbsp;Papers</label>
 					<input type="checkbox" id="white-papers" class="lvl-1-input">
 						<div class="lvl-1-div">
 							<!-- LVL2 -->
