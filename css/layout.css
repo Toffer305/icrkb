@@ -48,12 +48,17 @@ h2 {
 }
 
 h3 {
-	margin: auto;
-	padding: 20px;
-	padding-left: 0px;
-	font-size:1.25em;
-	font-weight: bolder;
-	font-variant: small-caps;
+    margin: auto;
+    padding: 20px;
+    padding-left: 0px;
+    font-size:1.25em;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .content-section {
@@ -82,6 +87,15 @@ h3 {
 
 	.padded_break{
 		padding: 15px;
+	}
+	
+	.jpg_product{
+		border:dashed 1px grey;
+		text-align: center;
+		margin: auto;
+		width: 40%;
+		margin-bottom: 10px;
+		float: left;
 	}
 /* /PRODUCT SECTION */
 
