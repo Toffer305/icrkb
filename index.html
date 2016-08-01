@@ -12,18 +12,18 @@
 		<link rel='stylesheet' href='css/social.css' type='text/css' media='all' />
 		
 		<script>
-		function productInfoFunction() {
-			document.getElementById("mainframe").src = "products-landing.html";
-		}
-		function softwareFunction() {
-			document.getElementById("mainframe").src = "software-landing.html";
-		}
-		function techToolsFunction() {
-			document.getElementById("mainframe").src = "tech-tools-landing.html";
-		}
-		function whitePaperFunction() {
-			document.getElementById("mainframe").src = "whitepapers-landing.html";
-		}
+			function productInfoFunction() {
+				document.getElementById("mainframe").src = "pages/products-landing.html";
+			}
+			function softwareFunction() {
+				document.getElementById("mainframe").src = "pages/software-landing.html";
+			}
+			function techToolsFunction() {
+				document.getElementById("mainframe").src = "pages/tech-tools-landing.html";
+			}
+			function whitePaperFunction() {
+				document.getElementById("mainframe").src = "pages/whitepapers-landing.html";
+			}
 		</script>
 	</head>
 
@@ -41,8 +41,8 @@
 			<hr>
 				<!-- unordered list for KNOWLEDGE BASE HELP items - defined as menulvl1 -->
 				<ul class="menulvl1">
-					<a href="about-these-docs.html" target="mainframe"><li>About these Docs</li></a>
-					<a href="usage-examples.html" target="mainframe"><li>Usage & Examples</li></a>
+					<a href="pages/about-these-docs.html" target="mainframe"><li>About these Docs</li></a>
+					<a href="pages/usage-examples.html" target="mainframe"><li>Usage & Examples</li></a>
 				</ul>
 			<hr>
 			
@@ -74,7 +74,7 @@
 														<input type="checkbox" id="analog-box-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<ul>
-																	<a href="product_template.html" target="mainframe"><li>EL-411PIXIM</li></a>
+																	<a href="pages/product_template.html" target="mainframe"><li>EL-411PIXIM</li></a>
 																	<a href="" target="mainframe"><li>EL-600</li></a>
 																	<a href="" target="mainframe"><li>EL-700</li></a>
 																	<a href="" target="mainframe"><li>XL8</li></a>
@@ -464,9 +464,9 @@
 					<input type="checkbox" id="software" class="lvl-1-input">
 						<div class="lvl-1-div">								
 							<ul>
-								<a href="user-client-software.html" target="mainframe"><li>User / Client Software</li></a>
-								<a href="installation-software.html" target="mainframe"><li>Installation Software</li></a>
-								<a href="device-required-software.html" target="mainframe"><li>Device Required Software</li></a>
+								<a href="pages/user-client-software.html" target="mainframe"><li>User / Client Software</li></a>
+								<a href="pages/installation-software.html" target="mainframe"><li>Installation Software</li></a>
+								<a href="pages/device-required-software.html" target="mainframe"><li>Device Required Software</li></a>
 							</ul>
 						</div>
 					</li>
@@ -483,7 +483,7 @@
 							<ul class="lvl-2-menu">
 								<a href="https://docs.google.com/spreadsheets/d/1jU8RHaZN7ypnZwCtSi8HUNMP4awsn6NMYvxCx4Dl7y0/edit#gid=600824459" target="mainframe">
 									<li>Firmware Matrix</li></a>
-								<a href="cotd.html" target="mainframe">
+								<a href="pages/cotd.html" target="mainframe">
 									<li>Password Generator</li></a>
 								<a href="https://docs.google.com/spreadsheets/d/18r1tpycqd_DmmQdkYyTIGbCzjwoAeOct3LgQ8uqS9ew/edit#gid=281915184" target="mainframe">
 									<li>3rd Party Chart</li></a>
@@ -520,7 +520,7 @@
 								<input type="checkbox" id="quick-start-guide" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<ul>
-											<a href="whitepapers/Doc_Integration.pdf" target="mainframe"><li>Integration Guide</li></a>
+											<a href="whitepapers/QSG/Doc_Integration.pdf" target="mainframe"><li>Integration Guide</li></a>
 										</ul>
 									</div>
 								</li>
@@ -552,7 +552,7 @@
 								<input type="checkbox" id="faqs" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<ul>
-											<a href="glossary.html" target="mainframe"><li>Glossary</li></a>
+											<a href="whitepapers/FAQ/glossary.html" target="mainframe"><li>Glossary</li></a>
 										</ul>
 									</div>
 								</li>
@@ -585,7 +585,7 @@
 			<div class="rightDiv">
 				<!-- iframe linked to navigation items on left side -->
 				<div class="frameWrapper">
-					<iframe id="mainframe" name="mainframe" class="" src="about-these-docs.html" ></iframe>
+					<iframe id="mainframe" name="mainframe" class="" src="pages/about-these-docs.html" ></iframe>
 				</div>
 			</div>
 		</div>
