@@ -35,9 +35,9 @@ a {
 
 h1 {
 	margin: auto;
-	padding: 20px;
+	padding: 10px 0 10px 0;
 	padding-left: 0px;
-	font-size:2em;
+	font-size:1.75em;
 	font-weight: bolder;
 	font-variant: small-caps;
 	text-align: left;

@@ -96,13 +96,13 @@ nav {
 	.logo {
 		width: 98%;
 		max-width: 97px;
-		margin: auto;
-		padding: 10px 1% 5px 1%;
+		margin: 0 auto;
+		padding: 7px 0 5px 0;
 	}
 
 	nav hr {
 		border: 1px solid #454545;
-		margin: 0px;
+		margin: 0 3px;
 	}
 	
 	nav ul {
