@@ -73,6 +73,28 @@ img {
 	padding: 0;
 	background: #fff;
 	color: #1f1f1f;
+	
+}
+
+.back-to-top-section {
+	text-align: right;
+	padding: 10px;
+	margin: 0;
+	text-decoration: none;
+	color: #444;
+
+}
+
+.back-to-top-section a {
+	color:#454545;
+	text-decoration: none;
+	font-size:2em;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+.back-to-top-section a:hover {
+	color: #6495ed;
 }
 
 /* /General CSS */
