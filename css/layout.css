@@ -130,23 +130,51 @@ img {
 	}
 	
 	.download-wrapper-item {
-		padding: 2px;
-		width: 24%;
-		height: auto;
+		background: #b7b7b7;
+		padding: 5px;
+		width: 23%;
+		height: 80px;
 		margin-top: 10px;
-		background-color: #b7b7b7;
-		border-radius: 0.25em;
+		border: 1px solid #b7b7b7;
+		border-top-left-radius: 0.25em;
+		border-top-right-radius: 0.25em;
+		line-height: 80px;
+		color: white;
+		font-weight: bold;
+		font-size: 2.5em;
 		text-align: center;
+	}
+	
+	.download-wrapper-item a {
+		color: #fff;
+	}
+	
+	.colored {
+		background-color: #6495ed; /* Cornflower Blue */
+	}
+	
+	.colored:hover,
+	.download-wrapper-item a:hover {
+		background-color: #fff;
+		color: #6495ed;
+	}
+	
+	.change-log-wrapper-item {
+		padding: 5px;
+		width: 23%;
+		height: auto;
+		background-color: #fff;
+		border: 1px solid #b7b7b7;
+		border-bottom-left-radius: 0.25em;
+		border-bottom-right-radius: 0.25em;
 	}
 	
 	.related-wrapper-item {
 		padding: 10px;
 		width: 48%;
 		height: auto;
-		background-color: #b7b7b7;
-		border-radius: 0.25em;
 	}
-	
+
 /* /SOFTWARE SECTION */
 
 /* WHITEPAPER SECTION */
