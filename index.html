@@ -26,12 +26,36 @@
 			}
 			function softwareFunction() {
 				document.getElementById("mainframe").src = "pages/software-landing.html";
+				
+				var x = document.getElementById("2");
+				// If "+" exist, overwrite it with "-"
+				if (x.className === "fa fa-caret-right") {
+					x.className = "fa fa-caret-down";
+				} else {
+					x.className = "fa fa-caret-right";
+				}
 			}
 			function techToolsFunction() {
 				document.getElementById("mainframe").src = "pages/tech-tools-landing.html";
+				
+				var x = document.getElementById("3");
+				// If "+" exist, overwrite it with "-"
+				if (x.className === "fa fa-caret-right") {
+					x.className = "fa fa-caret-down";
+				} else {
+					x.className = "fa fa-caret-right";
+				}
 			}
 			function whitePaperFunction() {
 				document.getElementById("mainframe").src = "pages/whitepapers-landing.html";
+				
+				var x = document.getElementById("4");
+				// If "+" exist, overwrite it with "-"
+				if (x.className === "fa fa-caret-right") {
+					x.className = "fa fa-caret-down";
+				} else {
+					x.className = "fa fa-caret-right";
+				}
 			}
 		</script>
 	</head>
@@ -642,7 +666,7 @@
 				<!-- drop down menus for the SOFTWARE section - uses checkbox hack -->
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
-					<li><label for="software" onclick="softwareFunction()">Software</label>
+					<li><label for="software" onclick="softwareFunction()"><i id="2" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Software</label>
 					<input type="checkbox" id="software" class="lvl-1-input">
 						<div class="lvl-1-div">								
 							<ul>
@@ -658,7 +682,7 @@
 				<!-- drop down menus for the IC REALTIME TECH TOOLS section - uses checkbox hack -->
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
-					<li><label for="tech-tools" onclick="techToolsFunction()">Tech&nbsp;Tools</label>
+					<li><label for="tech-tools" onclick="techToolsFunction()"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Tech&nbsp;Tools</label>
 					<input type="checkbox" id="tech-tools" class="lvl-1-input">
 						<div class="lvl-1-div">
 							<!-- LVL2 -->
@@ -677,6 +701,9 @@
 									<li>RS232 Codes</li></a>
 								<a href="pages/mount-diagram.html" target="mainframe">
 									<li>Mount Diagram</li></a>
+								
+								<a href="http://icrealtime.com/icrv3/" target="mainframe">
+									<li>ICR v3 Menu Sim</li></a>
 								
 								<li><label for="icr-technician-software">ICR Technician Software</label>
 								<input type="checkbox" id="icr-technician-software" class="lvl-2-input">
@@ -697,7 +724,7 @@
 			<hr>
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
-					<li><label for="white-papers" onclick="whitePaperFunction()">White&nbsp;Papers</label>
+					<li><label for="white-papers" onclick="whitePaperFunction()"><i id="4" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;White&nbsp;Papers</label>
 					<input type="checkbox" id="white-papers" class="lvl-1-input">
 						<div class="lvl-1-div">
 							<!-- LVL2 -->
