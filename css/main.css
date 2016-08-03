@@ -128,19 +128,23 @@ nav {
 	}
 
 	nav .lvl-2-menu li:hover {
-		background: #6b6b6b;
+		background: #5f5f5f;
 	}
 	
 	nav .lvl-3-menu li:hover {
-		background: #919191;
+		background: #787878;
 	}
 	
 	nav .lvl-4-menu li:hover {
-		background: #b7b7b7;
+		background: #919191;
 	}
 	
 	nav .lvl-5-menu li:hover {
-		background: #393939;
+		background: #ababab;
+	}
+	
+	nav .lvl-6-menu li:hover {
+		background: #c4c4c4;
 	}
 	
 	/* Checkbox Hack */
@@ -164,7 +168,8 @@ nav {
 			div.lvl-2-div,
 			div.lvl-3-div,
 			div.lvl-4-div,
-			div.lvl-5-div {
+			div.lvl-5-div,
+			div.lvl-6-div {
 				display: none;
 			}
 		/* /Default State */
@@ -179,7 +184,7 @@ nav {
 			.lvl-2-input[type=checkbox]:checked ~ div.lvl-2-div {
 				display: block;
 				padding-left: 5px;
-				background-color: #454545;	
+				background-color: #525252;	
 			}
 			
 			.lvl-3-input[type=checkbox]:checked ~ div.lvl-3-div {
@@ -191,10 +196,16 @@ nav {
 			.lvl-4-input[type=checkbox]:checked ~ div.lvl-4-div {
 			   display: block;
 			   padding-left: 5px;
-			   background-color: #919191;
+			   background-color: #858585;
 			}
 			
 			.lvl-5-input[type=checkbox]:checked ~ div.lvl-5-div {
+			   display: block;
+			   padding-left: 5px;
+			   background-color: #9e9e9e;
+			}
+			
+			.lvl-6-input[type=checkbox]:checked ~ div.lvl-6-div {
 			   display: block;
 			   padding-left: 5px;
 			   background-color: #b7b7b7;

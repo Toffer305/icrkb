@@ -10,10 +10,19 @@
 		<link rel='stylesheet' href='css/responsive.css' type='text/css' media="screen and (max-width: 1400px)" />
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel='stylesheet' href='css/social.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='fonts/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
 		
 		<script>
 			function productInfoFunction() {
 				document.getElementById("mainframe").src = "pages/products-landing.html";
+				
+				var x = document.getElementById("1");
+				// If "+" exist, overwrite it with "-"
+				if (x.className === "fa fa-caret-right") {
+					x.className = "fa fa-caret-down";
+				} else {
+					x.className = "fa fa-caret-right";
+				}
 			}
 			function softwareFunction() {
 				document.getElementById("mainframe").src = "pages/software-landing.html";
@@ -55,7 +64,7 @@
 			<div id="discloserMenus">
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
-					<li><label for="product-docs" onclick="productInfoFunction()">Product&nbsp;Documentation</label>
+					<li><label for="product-docs" onclick="productInfoFunction()"><i id="1" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Product&nbsp;Documentation</label>
 					<input type="checkbox" id="product-docs" class="lvl-1-input">
 						<div class="lvl-1-div">
 							<!-- LVL2 -->
@@ -73,7 +82,8 @@
 														<li><label for="analog-box-cameras">Box Cameras</label>
 														<input type="checkbox" id="analog-box-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-box-ccd-cameras/EL-411PIXIM.html" target="mainframe"><li>EL-411PIXIM</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-box-ccd-cameras/EL-600.html" target="mainframe"><li>EL-600</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-box-ccd-cameras/EL-700.html" target="mainframe"><li>EL-700</li></a>
@@ -84,7 +94,8 @@
 														<li><label for="analog-bullet-cameras">Bullet Cameras</label>
 														<input type="checkbox" id="analog-bullet-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-bullet-cameras/EL-1000B.html" target="mainframe"><li>EL-1000</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-bullet-cameras/EL-120.html" target="mainframe"><li>EL-120</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-bullet-cameras/EL-2000B.html" target="mainframe"><li>EL-2000B</li></a>
@@ -103,7 +114,8 @@
 														<li><label for="analog-covert-cameras">Discete/Covert Cameras</label>
 														<input type="checkbox" id="analog-covert-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-discretecovert-cameras/ICR-220.html" target="mainframe"><li>ICR-220</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-discretecovert-cameras/ICR-220-IR.html" target="mainframe"><li>ICR-220-IR</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-discretecovert-cameras/ICR-220-W.html" target="mainframe"><li>ICR-220-W</li></a>
@@ -117,7 +129,8 @@
 														<li><label for="analog-dome-cameras">Dome Cameras</label>
 														<input type="checkbox" id="analog-dome-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-dome-cameras/EL-400PIXIM.html" target="mainframe"><li>EL-400PIXIM</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-dome-cameras/EL-470.html" target="mainframe"><li>EL-470</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-dome-cameras/EL-MC1.html" target="mainframe"><li>EL-MC1</li></a>
@@ -131,7 +144,8 @@
 														<li><label for="analog-license-cameras">License Plate Cameras</label>
 														<input type="checkbox" id="analog-license-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-license-plate-cameras/EL-ID1_3.html" target="mainframe"><li>EL-ID1</li></a>
 																</ul>
 															</div>
@@ -139,7 +153,8 @@
 														<li><label for="analog-marine-cameras">Marine Cameras</label>
 														<input type="checkbox" id="analog-marine-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-marine-cameras/ELM-700BL.html" target="mainframe"><li>ELM-700BL</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-marine-cameras/ELM-700BL-IR.html" target="mainframe"><li>ELM-700BL-IR</li></a>
 																</ul>
@@ -148,7 +163,8 @@
 														<li><label for="analog-ptz-cameras">PTZ Cameras</label>
 														<input type="checkbox" id="analog-ptz-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-ptz-cameras/EL-TRACK-3600.html" target="mainframe"><li>EL-TRACK-3600</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-ptz-cameras/PTZ-1801WDR-FM.html" target="mainframe"><li>PTZ-1801WDR-FM</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-ptz-cameras/PTZ-2300S-IR.html" target="mainframe"><li>PTZ-2300S-IR</li></a>
@@ -158,17 +174,7 @@
 																	<a href="http://store.icrealtime.com/products/cat-ptz-cameras/PTZ-SEN-3600.html" target="mainframe"><li>PTZ-SEN-3600</li></a>
 																</ul>
 															</div>
-														</li>
-														<!-- Remove Thermal Cameras...?  Link Deactivated...-->
-														<li><label for="analog-thermal-cameras">Thermal Cameras</label>
-														<input type="checkbox" id="analog-thermal-cameras" class="lvl-4-input">
-															<div class="lvl-4-div">
-																<ul>
-																	<a href="" target="mainframe"><li>&nbsp;</li></a>
-																</ul>
-															</div>
-														</li>
-														
+														</li>														
 													</ul>
 													<!-- /LVL4 -->
 												</div>
@@ -180,7 +186,8 @@
 														<li><label for="analog-combo-series">Combo Series</label>
 														<input type="checkbox" id="analog-combo-series" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-combo-series/DVR-EDGE-S104-WEB.html" target="mainframe"><li>EDGE-S104</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-combo-series/DVR-EDGE-S108-WEB.html" target="mainframe"><li>EDGE-S108</li></a>
 																</ul>
@@ -189,7 +196,8 @@
 														<li><label for="analog-flex-series">Flex Series</label>
 														<input type="checkbox" id="analog-flex-series" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-flex-series/DVR-FLEX4E.html" target="mainframe"><li>DVR-FLEX 4E</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-flex-series/DVR-FLEX8E.html" target="mainframe"><li>DVR-FLEX 8E</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-flex-series/DVR-FLEX16E.html" target="mainframe"><li>DVR-FLEX 16E</li></a>
@@ -202,7 +210,8 @@
 														<li><label for="analog-max-series">Max Series</label>
 														<input type="checkbox" id="analog-max-series" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-max-series/DVR-MAX504D.html" target="mainframe"><li>DVR-MAX504D</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-max-series/DVR-MAX508D.html" target="mainframe"><li>DVR-MAX508D</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-max-series/DVR-MAX516D.html" target="mainframe"><li>DVR-MAX516D</li></a>
@@ -212,6 +221,7 @@
 														<li><label for="analog-specialty-recorders">Specialty Recorders</label>
 														<input type="checkbox" id="analog-specialty-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
+															<!-- LVL5 -->
 																<ul class="lvl-5-menu">
 																	<li><label for="analog-atm-dvr">ATM DVRs</label>
 																	<input type="checkbox" id="analog-atm-dvr" class="lvl-5-input">
@@ -254,7 +264,8 @@
 														<li><label for="hdavs-1080p-cameras">HD AVS Cameras</label>
 														<input type="checkbox" id="hdavs-1080p-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-hd-avs-1080p-cameras/AVS-4212C.html" target="mainframe"><li>AVS-4212C</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-hd-avs-1080p-cameras/AVS-B2210.html" target="mainframe"><li>AVS-B2210</li></a>
 																	<a href="http://store.icrealtime.com/products/cat-hd-avs-1080p-cameras/AVS-B2218Z.html" target="mainframe"><li>AVS-B2218Z</li></a>
@@ -279,7 +290,7 @@
 														<li><label for="hdavs-1080-recorders">HD AVS Recorders</label>
 														<input type="checkbox" id="hdavs-1080-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<!-- LVL 5 Menu -->
+															<!-- LVL5 -->
 																<ul class="lvl-5-menu">
 																	<li><label for="hdavs-1080-avr1400">AVR-1400</label>
 																	<input type="checkbox" id="hdavs-1080-avr1400" class="lvl-5-input">
@@ -333,7 +344,8 @@
 														<li><label for="hdavs-720p-cameras">HD AVS Cameras</label>
 														<input type="checkbox" id="hdavs-720p-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="http://store.icrealtime.com/products/cat-hd-avs-720p-cameras/AVS-4112C.html" target="mainframe"><li>AVS-4112C</li></a>
 																</ul>
 																<ul>
@@ -362,7 +374,8 @@
 														<li><label for="hdavs-720-recorders">HD AVS Recorders</label>
 														<input type="checkbox" id="hdavs-720-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<ul class="lvl-5-menu">
 																	<li><label for="hdavs-720-avr1400">AVR-1400</label>
 																	<input type="checkbox" id="hdavs-720-avr1400" class="lvl-5-input">
@@ -412,7 +425,8 @@
 														<li><label for="ip-360-cameras">360&deg; Cameras</label>
 														<input type="checkbox" id="ip-360-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -420,7 +434,8 @@
 														<li><label for="ip-720-cameras">720&deg; Cameras</label>
 														<input type="checkbox" id="ip-720-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -428,7 +443,8 @@
 														<li><label for="ip-box-cameras">IP Box Cameras</label>
 														<input type="checkbox" id="ip-box-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="product_template.html" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -436,7 +452,8 @@
 														<li><label for="ip-bullet-cameras">IP Bullet Cameras</label>
 														<input type="checkbox" id="ip-bullet-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -444,7 +461,8 @@
 														<li><label for="ip-dome-cameras">IP Dome Cameras</label>
 														<input type="checkbox" id="ip-dome-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -452,7 +470,8 @@
 														<li><label for="ip-marine-cameras">IP Marine Cameras</label>
 														<input type="checkbox" id="ip-marine-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -460,7 +479,8 @@
 														<li><label for="ip-ptz-cameras">IP PTZ Cameras</label>
 														<input type="checkbox" id="ip-ptz-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -468,7 +488,8 @@
 														<li><label for="ip-wifi-cameras">WiFi Cameras</label>
 														<input type="checkbox" id="ip-wifi-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -485,7 +506,7 @@
 														<li><label for="ip-4k-recorders">4K Recorders</label>
 														<input type="checkbox" id="ip-4k-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<!-- LVL4 -->
+															<!-- LVL5 -->
 																<ul class="lvl-5-menu">
 																	<li><label for="ip-6000k-series">NVR6000K Series</label>
 																	<input type="checkbox" id="ip-6000k-series" class="lvl-5-input">
@@ -517,7 +538,8 @@
 														<li><label for="ip-600v-series">NVR600V Series</label>
 														<input type="checkbox" id="ip-600v-series" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -525,7 +547,8 @@
 														<li><label for="ip-700mp-series">NVR700MP Series</label>
 														<input type="checkbox" id="ip-700mp-series" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -533,7 +556,8 @@
 														<li><label for="ip-700n-series">NVR700N Series</label>
 														<input type="checkbox" id="ip-700n-series" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -541,7 +565,8 @@
 														<li><label for="ip-700ns-series">NVR700NS Series</label>
 														<input type="checkbox" id="ip-700ns-series" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -549,7 +574,8 @@
 														<li><label for="ip-8000-series">NVR8000 Series</label>
 														<input type="checkbox" id="ip-8000-series" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -557,7 +583,8 @@
 														<li><label for="ip-specialty-recorders">Specialty IP Recorders</label>
 														<input type="checkbox" id="ip-specialty-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -565,7 +592,8 @@
 														<li><label for="ip-wifi-recorders">WiFi Recorders</label>
 														<input type="checkbox" id="ip-wifi-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
-																<ul>
+															<!-- LVL5 -->
+																<ul class="lvl-5-menu">
 																	<a href="" target="mainframe"><li>&nbsp;</li></a>
 																</ul>
 															</div>
@@ -653,7 +681,8 @@
 								<li><label for="icr-technician-software">ICR Technician Software</label>
 								<input type="checkbox" id="icr-technician-software" class="lvl-2-input">
 									<div class="lvl-2-div">
-										<ul>
+										<!-- LVL3 -->
+										<ul class="lvl-3-menu">
 											<a href="" target="mainframe"><li>IC Rescue</li></a>
 											<a href="" target="mainframe"><li>IC Response</li></a>
 											<a href="" target="mainframe"><li>&nbsp;</li></a>
@@ -676,7 +705,8 @@
 								<li><label for="quick-ref-guide">Quick Reference Guides</label>
 								<input type="checkbox" id="quick-ref-guide" class="lvl-2-input">
 									<div class="lvl-2-div">
-										<ul>
+										<!-- LVL3 -->
+										<ul class="lvl-3-menu">
 											<a href="" target="mainframe"><li>&nbsp;</li></a>
 										</ul>
 									</div>
@@ -684,7 +714,8 @@
 								<li><label for="quick-start-guide">Quick Start Guides</label>
 								<input type="checkbox" id="quick-start-guide" class="lvl-2-input">
 									<div class="lvl-2-div">
-										<ul>
+										<!-- LVL3 -->
+										<ul class="lvl-3-menu">
 											<a href="whitepapers/QSG/Doc_Integration.pdf" target="mainframe"><li>Integration Guide</li></a>
 										</ul>
 									</div>
@@ -692,7 +723,8 @@
 								<li><label for="dat-sheets">Data Sheets</label>
 								<input type="checkbox" id="dat-sheets" class="lvl-2-input">
 									<div class="lvl-2-div">
-										<ul>
+										<!-- LVL3 -->
+										<ul class="lvl-3-menu">
 											<a href="" target="mainframe"><li>&nbsp;</li></a>
 										</ul>
 									</div>
@@ -700,7 +732,8 @@
 								<li><label for="manuals">Manuals</label>
 								<input type="checkbox" id="manuals" class="lvl-2-input">
 									<div class="lvl-2-div">
-										<ul>
+										<!-- LVL3 -->
+										<ul class="lvl-3-menu">
 											<a href="" target="mainframe"><li>&nbsp;</li></a>
 										</ul>
 									</div>
@@ -708,7 +741,8 @@
 								<li><label for="how-to-notes">How-to Notes</label>
 								<input type="checkbox" id="how-to-notes" class="lvl-2-input">
 									<div class="lvl-2-div">
-										<ul>
+										<!-- LVL3 -->
+										<ul class="lvl-3-menu">
 											<a href="" target="mainframe"><li>&nbsp;</li></a>
 										</ul>
 									</div>
@@ -716,7 +750,8 @@
 								<li><label for="faqs">FAQs</label>
 								<input type="checkbox" id="faqs" class="lvl-2-input">
 									<div class="lvl-2-div">
-										<ul>
+										<!-- LVL3 -->
+										<ul class="lvl-3-menu">
 											<a href="whitepapers/FAQ/glossary.html" target="mainframe"><li>Glossary</li></a>
 										</ul>
 									</div>
