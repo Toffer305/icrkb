@@ -46,6 +46,9 @@
 					x.className = "fa fa-caret-right";
 				}
 			}
+				function techSoftwareFunction() {
+					document.getElementById("mainframe").src = "pages/tech-software-landing.html";
+				}
 			function whitePaperFunction() {
 				document.getElementById("mainframe").src = "pages/whitepapers-landing.html";
 				
@@ -735,14 +738,13 @@
 									<li>Mount Diagram</li></a>
 								<a href="http://icrealtime.com/icrv3/" target="mainframe">
 									<li>ICR v3 Menu Sim</li></a>
-								<li><label for="icr-technician-software">ICR Technician Software</label>
+								<li><label for="icr-technician-software" onclick="techSoftwareFunction()">ICR Technician Software</label>
 								<input type="checkbox" id="icr-technician-software" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<!-- LVL3 -->
 										<ul class="lvl-3-menu">
-											<a href="" target="mainframe"><li>IC Rescue</li></a>
-											<a href="" target="mainframe"><li>IC Response</li></a>
-											<a href="" target="mainframe"><li>&nbsp;</li></a>
+											<a href="pages/ic-rescue.html" target="mainframe"><li>IC Rescue</li></a>
+											<a href="pages/ic-response.html" target="mainframe"><li>IC Response</li></a>
 										</ul>
 										<!-- /LVL3 -->
 									</div>
