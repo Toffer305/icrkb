@@ -31,6 +31,11 @@ body {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	color: #fff;
+}
+
+a:visited {
+	
 }
 
 .16-9-wrapper {
@@ -64,42 +69,48 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
-.frameWrapper {
-	width: 100%;
-	height: 80%;
-}
-.frameWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 /* /General CSS */
 
 /* /SEARCH AREA SECTION - top right float */
-
-.search-area {
+.top-bar-section {
 	position: absolute;
 	top: 0;
-	right: 20px;
-	width: 305px;
-	height: 52px;
+	left: 0;
+	right: 18px;
+	height: 54px;
 	padding: 0 5px;
 	margin: 0;
 	background-color: #1f1f1f;
-	border: solid 1px #1f1f1f;
-	border-bottom-left-radius: 0.25em;
-	border-bottom-right-radius: 0.25em;
-	color: #fff;
 	z-index: 10;
+	color: #fff;
+}
+
+.logo {
+	width: 6%;
+	margin: 0 15px;
+	padding: 8px 0 0 0;
+	float: left;
+
+}
+
+.menu-icon-section {
+	height: 52px;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	float: left;
+	padding: 6px 30px;
+}
+
+.search-area {
+	float: right;
+	width: 316px;
+	height: 52px;
+	padding: 0;
+	margin: 0 3%;
 
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	
 }
 
 /* search box*/
@@ -127,35 +138,53 @@ img {
 	border:none;
 	cursor:pointer;
 }
-
-
-
-
-
 /* /SEARCH AREA SECTION - top right float */
 
 /* NAVIGATION SECTION - left side */
-nav {
-	width: 20%;
-	height:100%;
-	float: left;
+.navigation {
+	width: 0; 
+
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #1f1f1f;
+	transition: width 0.3s ease;
 	padding: 0 10px;
 	margin: 0;
-	z-index: 1;
 	color: #fff;
-	background-color: #1f1f1f;
 	overflow-y:scroll;
-
 }
 
-	.logo {
-		width: 98%;
-		max-width: 97px;
-		margin: 0 auto;
-		padding: 7px 0 5px 0;
-	}
+.page-wrap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
 
-	nav hr {
+.page-wrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#main-navigation:target {
+	width: 20%; 
+}
+
+#main-navigation:target + .page-wrap {
+	left: 20%;
+}
+
+nav hr {
 		border: 1px solid #454545;
 		margin: 0 3px;
 	}
@@ -214,8 +243,6 @@ nav {
 			font-weight: normal;		
 			display: block;
 			text-decoration: none;
-			color: #fff
-			background-color: #1f1f1f;
 		}
 
 		/* Default State */
@@ -278,27 +305,6 @@ nav {
 	}
 	
 /* /NAVIGATION SECTION - left side */
-
-/* MAIN SECTION - right side */
-.rightDiv {
-	width: 80% !important;
-	height: 100% !important;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	background-color: #fff;
-	margin: 0;
-	padding: 0;
-}
-
-	.inner-section {
-		padding: 0 25px;
-		margin: 0;
-	}
-
-/* /MAIN SECTION - right side */
-
 
 /* CLEAN UP & MAINTAINANCE */
 .clearfix:before, .clearfix:after { content: ""; display: table; }

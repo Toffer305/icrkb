@@ -6,7 +6,7 @@
 		<title></title>
 		<a rel="author" href=""></a>
 
-		<link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='css/staging-main.css' type='text/css' media='all' />
 		<link rel='stylesheet' href='css/responsive.css' type='text/css' media="screen and (max-width: 1400px)" />
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel='stylesheet' href='css/social.css' type='text/css' media='all' />
@@ -61,25 +61,33 @@
 				}
 			}
 		</script>
+		
 	</head>
-
+	
 	<body>
 		<!-- container for the entire site -->
 		<div class="container">
-			
-			<!-- SEARCH BAR SECTION - defines the area for the google search function -->
-			<form class="search-area" action="">
-				<input type="search" name="search" class="search-input" placeholder="Search..." />
-				<button type="submit" class="search-button" value="search"><i class="fa fa-search" aria-hidden="true"></i></button>
-			</form>
-			
-			<!-- nav defines the left side navigation section -->
-			<nav>
+		
+			<!-- TOP BAR SECTION - defines the area for the logo, hamburger menu & search function -->
+			<div class="top-bar-section">
+				<div class="menu-icon-section">
+					<a href="#main-navigation"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				</div>
 				<div class="logo">
 					<a href="http://icrealtime.com" target="_blank">
 						<img src="images/logo.png" alt="IC Realtime" />
 					</a>
 				</div>
+				<form class="search-area" id="g-search" name="q" method="get" action="http://google.com/search" target="mainframe">
+					<input type="search" name="q" class="search-input" placeholder="Google Search..." />
+                <button type="submit" class="search-button" value="search-input"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+			</div>
+			<!-- TOP BAR SECTION - defines the area for the google search function -->
+		
+
+			<nav id="main-navigation" class="navigation">
+				
 			<hr>
 				<!-- unordered list for KNOWLEDGE BASE HELP items - defined as menulvl1 -->
 				<ul class="menulvl1">
@@ -2052,14 +2060,9 @@
 				</p>
 			</nav>
 			<!-- /nav defines the left side navigation section -->
-			
-			<!-- defines the right side section -->
-			<div class="rightDiv">
-				<!-- iframe linked to navigation items on left side -->
-				<div class="frameWrapper">
-					<iframe id="mainframe" name="mainframe" class="" src="pages/about-these-docs.html" ></iframe>
-				</div>
+
+
+			<div class="page-wrap">
+				<iframe id="mainframe" name="mainframe" class="" src="pages/about-these-docs.html" ></iframe>
 			</div>
 		</div>
-	<body>
-</html>
