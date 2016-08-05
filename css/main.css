@@ -84,7 +84,7 @@ img {
 .search-area {
 	position: absolute;
 	top: 0;
-	right: 5%;
+	right: 20px;
 	width: 305px;
 	height: 52px;
 	padding: 0 5px;
