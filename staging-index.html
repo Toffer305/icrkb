@@ -68,52 +68,38 @@
 		<!-- container for the entire site -->
 		<div class="container">
 		
-			<input type="checkbox" id="rss-icon" class="right-side-feed-input">
-			
 			<!-- TOP BAR SECTION - defines the area for the logo, hamburger menu & search function -->
 			<div class="top-bar-section">
 				<div class="menu-icon-section">
 					<a href="#main-navigation"><i class="fa fa-bars" aria-hidden="true"></i></a>
 				</div>
-				
 				<div class="logo">
 					<a href="http://icrealtime.com" target="_blank">
 						<img src="images/logo.png" alt="IC Realtime" />
 					</a>
 				</div>
-				
 				<form class="search-area" id="g-search" name="q" method="get" action="http://google.com/search" target="_blank">
 					<input type="search" name="q" class="search-input" placeholder="Google Search..." />
-					<button type="submit" class="search-button" value="search-input"><i class="fa fa-search" aria-hidden="true"></i></button>
-				</form>
-				
-				<div class="tool-icons">
-					<label for="rss-icon">
-						<i class="fa fa-rss" aria-hidden="true"></i>
-					</label>
-					
-				</div>
-				
+                <button type="submit" class="search-button" value="search-input"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
 			</div>
 			<!-- TOP BAR SECTION - defines the area for the google search function -->
 		
+			<!-- /nav defines the left side navigation section -->
 
 			<nav id="main-navigation" class="navigation">
 				
-			<hr>
+				<hr>
+				
 				<!-- unordered list for KNOWLEDGE BASE HELP items - defined as menulvl1 -->
 				<ul class="menulvl1">
 					<a href="pages/about-these-docs.html" target="mainframe"><li>About these Docs</li></a>
 					<a href="pages/usage-examples.html" target="mainframe"><li>Usage & Examples</li></a>
 				</ul>
-			<hr>
+				
+				<hr>
 			
-			<!-- drop down menus for the WHITE PAPERS section - uses checkbox hack - valid classes include:
-				lvl-1-menu,		lvl-2-menu, 	lvl-3-menu, 	lvl-4-menu, 	lvl-5-menu,
-				lvl-1-div,		lvl-2-div, 		lvl-3-div, 		lvl-4-div, 		lvl-5-div,
-				lvl-1-input, 	lvl-2-input, 	lvl-3-input, 	lvl-4-input, 	lvl-5-input -->
-			
-			<!-- drop down menus for the PRODUCT DOCUMENTATION section - uses checkbox hack -->
+			<!-- drop down menus for the WHITE PAPERS section - uses checkbox hack -->
 
 				<!-- LVL1 -->
 				<ul class="lvl-1-menu">
@@ -2053,16 +2039,17 @@
 						</div>
 					</li>
 				</ul>
-				<hr>
+			<hr>
 				<!-- /LVL1 -->
 				<!-- unordered list for LINKS section -->
 				<!-- LVL1 -->
 				<ul class="menulvl1">
 					<a href="http://192.168.1.245/redmine" target="_blank"><li>Redmine PM</li></a>
 					<a href="ftp://192.168.1.245/Firmware/" target="mainframe"><li>Firmware FTP Site</li></a>
+					
 				</ul>
 				<!-- /LVL1 -->
-				<hr>			
+			<hr>			
 				<!-- bottom of the navigation section listing contact info -->
 				<p class="contactInfo">
 					<b>Tech Support</b><br />
@@ -2072,29 +2059,8 @@
 			</nav>
 			<!-- /nav defines the left side navigation section -->
 
-			<!-- PAGE WRAP section - the main page area (right side) -->
+
 			<div class="page-wrap">
 				<iframe id="mainframe" name="mainframe" class="" src="pages/about-these-docs.html" ></iframe>
 			</div>
-			<!-- /PAGE WRAP section - the main page area (right side) -->
-			
-			<!-- RIGHT SIDE FEED section -->
-			<div class="right-side-feed-section">
-				<!-- start feedwind code -->
-	
-					<script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script>
-					
-					<script type="text/javascript">(function() {var params = {rssmikle_url: "http://feeds.webservice.techradar.com/us/rss",rssmikle_frame_width: "300",rssmikle_frame_height: "400",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "on",rssmikle_title_sentence: "ICR News Feed",rssmikle_title_link: "",rssmikle_title_bgcolor: "#6495ED",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#1F1F1F",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#6495ED",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#C4C4C4",rssmikle_item_date: "on",rssmikle_timezone: "America/New_York",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
-					
-					<div style="font-size:10px; text-align:center; width:300px;">
-						<a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.-->
-					</div>
-					
-				<!--  end  feedwind code -->
-			</div>
-			<!-- /PAGE WRAP section - the main page area (right side) -->
-			
 		</div>
-		<!-- /container for the entire site -->
-	</body>
-</html>

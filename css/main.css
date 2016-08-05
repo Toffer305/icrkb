@@ -131,13 +131,22 @@ img {
 
 .search-button {
 	width:35px;
-	height:30px;
+	height:52px;
 	background-color: transparent;
 	color: #fff;
 	font-size: 1.15em;
 	border:none;
 	cursor:pointer;
 }
+
+.tool-icons {
+	float: right;
+	height: 52px;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	padding: 6px 0 0 0;
+}
+
 /* /SEARCH AREA SECTION - top right float */
 
 /* NAVIGATION SECTION - left side */
@@ -155,33 +164,6 @@ img {
 	margin: 0;
 	color: #fff;
 	overflow-y:scroll;
-}
-
-.page-wrap {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 20%;
-	right: 0;
-	background-color: #fff;
-	margin: 0;
-	padding: 0;
-}
-
-.page-wrap iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-#main-navigation:target {
-	width: 0; 
-}
-
-#main-navigation:target + .page-wrap {
-	left: 0;
 }
 
 nav hr {
@@ -305,6 +287,61 @@ nav hr {
 	}
 	
 /* /NAVIGATION SECTION - left side */
+
+
+/* PAGE WRAP SECTION - right side */
+.page-wrap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 20%;
+	right: 0;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.page-wrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#main-navigation:target {
+	width: 0; 
+}
+
+#main-navigation:target + .page-wrap {
+	left: 0;
+}
+
+/* /PAGE WRAP SECTION - right side */
+
+/* Default State */
+div.right-side-feed-section {
+	width:300px;
+	z-index: 20;
+	position: fixed;
+	right: 18px;
+	bottom: 18px;
+	background-color: #1f1f1f;
+	display: none;
+	
+	transition: width 0.3s ease-in-out;
+}
+/* /Default State */
+
+/* Toggled State */
+.right-side-feed-input[type=checkbox]:checked ~ div.right-side-feed-section {
+	display: block;
+}
+/* /Toggled State */
+/*  RIGHT SIDE FEED SECTION - right side */
+
+
+/*  /RIGHT SIDE FEED SECTION - right side */
 
 /* CLEAN UP & MAINTAINANCE */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
