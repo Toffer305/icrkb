@@ -84,9 +84,9 @@ img {
 .search-area {
 	position: absolute;
 	top: 0;
-	right: 6%;
+	right: 5%;
 	width: 305px;
-	height: 55px;
+	height: 52px;
 	padding: 0 5px;
 	margin: 0;
 	background-color: #1f1f1f;
@@ -105,7 +105,7 @@ img {
 /* search box*/
 .search-input {
 	width:250px;
-	height: 40px;
+	height: 35px;
 	margin-top: 6px;
 	padding:5px;
 	border-radius:0.25em;
