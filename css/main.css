@@ -313,7 +313,7 @@ nav hr {
 	width: 0; 
 }
 
-#main-navigation:target + .page-wrap {
+.menu-input[type=checkbox]:checked ~ .page-wrap {
 	left: 0;
 }
 
