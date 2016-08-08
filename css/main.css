@@ -139,7 +139,15 @@ img {
 	cursor:pointer;
 }
 
-.tool-icons {
+.rss-icon {
+	float: right;
+	height: 52px;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	padding: 6px 0 0 20px;
+}
+
+.cal-icon {
 	float: right;
 	height: 52px;
 	line-height: 1.5em;
@@ -316,9 +324,9 @@ nav hr {
 .menu-input[type=checkbox]:checked ~ .page-wrap {
 	left: 0;
 }
-
 /* /PAGE WRAP SECTION - right side */
 
+/*  RIGHT SIDE FEED SECTION - right side */
 /* Default State */
 div.right-side-feed-section {
 	width:300px;
@@ -336,9 +344,26 @@ div.right-side-feed-section {
 	display: block;
 }
 /* /Toggled State */
-/*  RIGHT SIDE FEED SECTION - right side */
+/*  /RIGHT SIDE FEED SECTION - right side */
 
+/*  RIGHT SIDE CAL SECTION - right side */
+/* Default State */
+div.right-side-cal-section {
+	width:800px;
+	z-index: 20;
+	position: fixed;
+	right: 18px;
+	top: 118px;
+	background-color: #1f1f1f;
+	display: none;
+}
+/* /Default State */
 
+/* Toggled State */
+.right-side-cal-input[type=checkbox]:checked ~ div.right-side-cal-section {
+	display: block;
+}
+/* /Toggled State */
 /*  /RIGHT SIDE FEED SECTION - right side */
 
 /* CLEAN UP & MAINTAINANCE */
