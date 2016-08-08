@@ -10,14 +10,14 @@ body {
 	font-size:18px;
 	font-weight: normal;
 	font-family: 'Roboto', sans-serif;
-	padding: 55px 0 0 0;
+	padding: 0;
 	margin: 0;
 	background-color: #fff;
 }
 
 .inner-section {
 	padding: 0 25px;
-	margin: 0;
+	margin: 55px 0 0;
 }
 
 a {
@@ -129,6 +129,19 @@ img {
 	color: #6495ed;
 }
 
+#toc {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 10px 20px 25px 50px;
+	font-size: 0.75em;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#toc li {
+	list-style-type: upper-roman;
+}
+
 /* /General CSS */
 
 /* PRODUCT SECTION */	
@@ -178,50 +191,43 @@ img {
 
 	.software-wrapper-item {
 		padding: 5px;
-		width: 48%;
+		width: 36%;
 		height: auto;
 		margin-top: 10px;
 	}
 	
-	.download-wrapper-item {
-		background: #b7b7b7;
-		padding: 5px;
-		width: 23%;
-		height: 60px;
+	.software-wrapper-item:first-child {
+		padding: 15px;
+		width: 60%;
+		height: auto;
 		margin-top: 10px;
-		border: 1px solid #b7b7b7;
-		border-top-left-radius: 0.25em;
-		border-top-right-radius: 0.25em;
-		line-height: 60px;
-		color: white;
-		font-weight: bold;
-		font-size: 2.5em;
+	}
+	
+	.download-wrapper {
+		width: 100%;
+	}
+	
+	.download-wrapper th {
+		border-bottom: 1px solid #1f1f1f;
+	}
+	
+	.download-wrapper tr:nth-child(even) {
+		background-color: #b7b7b7;
+	}
+	
+	.download-wrapper td:nth-child(odd) {
+		width: 10%;
 		text-align: center;
 	}
 	
-	.download-wrapper-item a {
-		color: #fff;
-	}
-	
 	.colored {
-		background-color: #6495ed; /* Cornflower Blue */
+		color: #6495ed; /* Cornflower Blue */
 	}
 	
-	.colored:hover,
-	.download-wrapper-item a:hover {
-		background-color: #fff;
-		color: #6495ed;
+	.colored:hover {
+
 	}
-	
-	.change-log-wrapper-item {
-		padding: 5px;
-		width: 23%;
-		height: auto;
-		background-color: #fff;
-		border: 1px solid #b7b7b7;
-		border-bottom-left-radius: 0.25em;
-		border-bottom-right-radius: 0.25em;
-	}
+
 	
 	.related-wrapper-item {
 		padding: 10px;
