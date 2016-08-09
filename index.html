@@ -57,55 +57,7 @@
 		<link rel='stylesheet' href='css/social.css' type='text/css' media='all' />
 		<link rel='stylesheet' href='fonts/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
 		
-		<script>
-			function productInfoFunction() {
-				document.getElementById("mainframe").src = "pages/products-landing.html";
-				
-				var x = document.getElementById("1");
-				// If "+" exist, overwrite it with "-"
-				if (x.className === "fa fa-caret-right") {
-					x.className = "fa fa-caret-down";
-				} else {
-					x.className = "fa fa-caret-right";
-				}
-			}
-			function softwareFunction() {
-				document.getElementById("mainframe").src = "pages/software-landing.html";
-				
-				var x = document.getElementById("2");
-				// If "+" exist, overwrite it with "-"
-				if (x.className === "fa fa-caret-right") {
-					x.className = "fa fa-caret-down";
-				} else {
-					x.className = "fa fa-caret-right";
-				}
-			}
-			function techToolsFunction() {
-				document.getElementById("mainframe").src = "pages/tech-tools-landing.html";
-				
-				var x = document.getElementById("3");
-				// If "+" exist, overwrite it with "-"
-				if (x.className === "fa fa-caret-right") {
-					x.className = "fa fa-caret-down";
-				} else {
-					x.className = "fa fa-caret-right";
-				}
-			}
-				function techSoftwareFunction() {
-					document.getElementById("mainframe").src = "pages/tech-software-landing.html";
-				}
-			function whitePaperFunction() {
-				document.getElementById("mainframe").src = "pages/whitepapers-landing.html";
-				
-				var x = document.getElementById("4");
-				// If "+" exist, overwrite it with "-"
-				if (x.className === "fa fa-caret-right") {
-					x.className = "fa fa-caret-down";
-				} else {
-					x.className = "fa fa-caret-right";
-				}
-			}
-		</script>
+		<script src="js/main.js"></script>
 	</head>
 	
 	<body>
@@ -181,17 +133,17 @@
 						<div class="lvl-1-div">
 							<!-- LVL2 -->
 							<ul class="lvl-2-menu">
-								<li><label for="analog-systems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Systems</label>
+								<li><label for="analog-systems" onclick="analogSystemsCaret()"><i id="analogSystems_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Systems</label>
 								<input type="checkbox" id="analog-systems" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<!-- LVL3 -->
 										<ul class="lvl-3-menu">
-											<li><label for="analog-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Cameras</label>
+											<li><label for="analog-cameras" onclick="analogCamerasCaret()"><i id="analogCameras_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Cameras</label>
 											<input type="checkbox" id="analog-cameras" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
-														<li><label for="analog-box-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Box Cameras</label>
+														<li><label for="analog-box-cameras" onclick="analogBoxCaret()"><i id="analogBox_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Box Cameras</label>
 														<input type="checkbox" id="analog-box-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -204,7 +156,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-bullet-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Bullet Cameras</label>
+														<li><label for="analog-bullet-cameras" onclick="analogBulletCaret()"><i id="analogBullet_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Bullet Cameras</label>
 														<input type="checkbox" id="analog-bullet-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -224,7 +176,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-covert-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Discete/Covert Cameras</label>
+														<li><label for="analog-covert-cameras" onclick="analogCovertCaret()"><i id="analogCovert_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Discete/Covert Cameras</label>
 														<input type="checkbox" id="analog-covert-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -240,7 +192,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-dome-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Dome Cameras</label>
+														<li><label for="analog-dome-cameras" onclick="analogDomeCaret()"><i id="analogDome_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Dome Cameras</label>
 														<input type="checkbox" id="analog-dome-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -256,7 +208,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-license-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;License Plate Cameras</label>
+														<li><label for="analog-license-cameras" onclick="analogLicenseCaret()"><i id="analogLicense_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;License Plate Cameras</label>
 														<input type="checkbox" id="analog-license-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -266,7 +218,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-marine-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Marine Cameras</label>
+														<li><label for="analog-marine-cameras" onclick="analogMarineCaret()"><i id="analogMarine_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Marine Cameras</label>
 														<input type="checkbox" id="analog-marine-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -277,7 +229,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-ptz-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;PTZ Cameras</label>
+														<li><label for="analog-ptz-cameras" onclick="analogPTZCaret()"><i id="analogPTZ_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;PTZ Cameras</label>
 														<input type="checkbox" id="analog-ptz-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -297,12 +249,12 @@
 													<!-- /LVL4 -->
 												</div>
 											</li>
-											<li><label for="analog-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Recorders</label>
+											<li><label for="analog-recorders" onclick="analogRecordersCaret()"><i id="analogRecorders_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Recorders</label>
 											<input type="checkbox" id="analog-recorders" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
-														<li><label for="analog-combo-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Combo Series</label>
+														<li><label for="analog-combo-series" onclick="analogComboCaret()"><i id="analogCombo_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Combo Series</label>
 														<input type="checkbox" id="analog-combo-series" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -313,7 +265,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-flex-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Flex Series</label>
+														<li><label for="analog-flex-series" onclick="analogFlexCaret()"><i id="analogFlex_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Flex Series</label>
 														<input type="checkbox" id="analog-flex-series" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -327,7 +279,7 @@
 																<!-- LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-max-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Max Series</label>
+														<li><label for="analog-max-series" onclick="analogMaxCaret()"><i id="analogMax_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Max Series</label>
 														<input type="checkbox" id="analog-max-series" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -339,12 +291,12 @@
 																<!-- LVL5 -->
 															</div>
 														</li>
-														<li><label for="analog-specialty-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Specialty Recorders</label>
+														<li><label for="analog-specialty-recorders" onclick="analogSpecialtyCaret()"><i id="analogSpecialty_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Specialty Recorders</label>
 														<input type="checkbox" id="analog-specialty-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
 																<ul class="lvl-5-menu">
-																	<li><label for="analog-atm-dvr"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;ATM DVRs</label>
+																	<li><label for="analog-atm-dvr" onclick="analogATMDVRCaret()"><i id="analogATMDVR_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;ATM DVRs</label>
 																	<input type="checkbox" id="analog-atm-dvr" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -355,7 +307,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="analog-mobile-dvr"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Mobile DVRs</label>
+																	<li><label for="analog-mobile-dvr" onclick="analogMobileDVRCaret()"><i id="analogMobileDVR_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Mobile DVRs</label>
 																	<input type="checkbox" id="analog-mobile-dvr" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -378,17 +330,17 @@
 									</div>
 								</li>
 								
-								<li><label for="hdavs-systems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Systems</label>
+								<li><label for="hdavs-systems" onclick="hdavsSystemsCaret()"><i id="hdavsSystems_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Systems</label>
 								<input type="checkbox" id="hdavs-systems" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<!-- LVL3 -->
 										<ul class="lvl-3-menu">
-											<li><label for="hdavs-1080p-sytems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS 1080P Systems</label>
+											<li><label for="hdavs-1080p-sytems" onclick="hdavs1080Caret()"><i id="hdavs1080_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS 1080P Systems</label>
 											<input type="checkbox" id="hdavs-1080p-sytems" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
-														<li><label for="hdavs-1080p-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Cameras</label>
+														<li><label for="hdavs-1080p-cameras" onclick="hdavs1080CamerasCaret()"><i id="hdavs1080Cameras_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Cameras</label>
 														<input type="checkbox" id="hdavs-1080p-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -415,12 +367,12 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="hdavs-1080-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Recorders</label>
+														<li><label for="hdavs-1080-recorders" onclick="hdavs1080RecordersCaret()"><i id="hdavs1080Recorders_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Recorders</label>
 														<input type="checkbox" id="hdavs-1080-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
 																<ul class="lvl-5-menu">
-																	<li><label for="hdavs-1080-avr1400"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-1400</label>
+																	<li><label for="hdavs-1080-avr1400" onclick="hdavs1080AVR1400Caret()"><i id="hdavs1080AVR1400_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-1400</label>
 																	<input type="checkbox" id="hdavs-1080-avr1400" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -431,7 +383,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="hdavs-1080-avr1700"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-1700</label>
+																	<li><label for="hdavs-1080-avr1700" onclick="hdavs1080AVR1700Caret()"><i id="hdavs1080AVR1700_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-1700</label>
 																	<input type="checkbox" id="hdavs-1080-avr1700" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -442,7 +394,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="hdavs-1080-800S"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-800S</label>
+																	<li><label for="hdavs-1080-800S" onclick="hdavs1080AVR800sCaret()"><i id="hdavs1080AVR800s_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-800S</label>
 																	<input type="checkbox" id="hdavs-1080-800S" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -464,12 +416,12 @@
 													<!-- /LVL4 -->
 												</div>
 											</li>
-											<li><label for="hdavs-720p-sytems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS 720P Systems</label>
+											<li><label for="hdavs-720p-sytems" onclick="hdavs720Caret()"><i id="hdavs720_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS 720P Systems</label>
 											<input type="checkbox" id="hdavs-720p-sytems" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
-														<li><label for="hdavs-720p-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Cameras</label>
+														<li><label for="hdavs-720p-cameras" onclick="hdavs720CamerasCaret()"><i id="hdavs720Cameras_i" class="fa fa-caret-right" aria-hidden="true" ></i>&nbsp;HD AVS Cameras</label>
 														<input type="checkbox" id="hdavs-720p-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -486,12 +438,12 @@
 																<!-- LVL5 -->
 															</div>
 														</li>
-														<li><label for="hdavs-720-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Recorders</label>
+														<li><label for="hdavs-720-recorders" onclick="hdavs720RecordersCaret()"><i id="hdavs720Recorders_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Recorders</label>
 														<input type="checkbox" id="hdavs-720-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
 																<ul class="lvl-5-menu">
-																	<li><label for="hdavs-720-avr1400"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-1400</label>
+																	<li><label for="hdavs-720-avr1400" onclick="hdavs720AVR1400Caret()"><i id="hdavs720AVR1400_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-1400</label>
 																	<input type="checkbox" id="hdavs-720-avr1400" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -502,7 +454,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="hdavs-720-avr1800"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-1800</label>
+																	<li><label for="hdavs-720-avr1800" onclick="hdavs720AVR1800Caret()"><i id="hdavs720AVR1800_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;AVR-1800</label>
 																	<input type="checkbox" id="hdavs-720-avr1800" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -527,17 +479,17 @@
 									</div>
 								</li>
 								
-								<li><label for="ip-systems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Systems</label>
+								<li><label for="ip-systems" onclick="ipSystemsCaret()"><i id="ipSystems_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Systems</label>
 								<input type="checkbox" id="ip-systems" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<!-- LVL3 -->
 										<ul class="lvl-3-menu">
-											<li><label for="ip-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Cameras</label>
+											<li><label for="ip-cameras" onclick="ipCamerasCaret()"><i id="ipCameras_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Cameras</label>
 											<input type="checkbox" id="ip-cameras" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
-														<li><label for="ip-360-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;360&deg; Cameras</label>
+														<li><label for="ip-360-cameras" onclick="ip360Caret()"><i id="ip360_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;360&deg; Cameras</label>
 														<input type="checkbox" id="ip-360-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -548,7 +500,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-720-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;720&deg; Cameras</label>
+														<li><label for="ip-720-cameras" onclick="ip720Caret()"><i id="ip720_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;720&deg; Cameras</label>
 														<input type="checkbox" id="ip-720-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -559,7 +511,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-box-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Box Cameras</label>
+														<li><label for="ip-box-cameras" onclick="ipBoxCaret()"><i id="ipBox_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Box Cameras</label>
 														<input type="checkbox" id="ip-box-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -572,7 +524,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-bullet-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Bullet Cameras</label>
+														<li><label for="ip-bullet-cameras" onclick="ipBulletCaret()"><i id="ipBullet_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Bullet Cameras</label>
 														<input type="checkbox" id="ip-bullet-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -603,7 +555,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-dome-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Dome Cameras</label>
+														<li><label for="ip-dome-cameras" onclick="ipDomeCaret()"><i id="ipDome_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Dome Cameras</label>
 														<input type="checkbox" id="ip-dome-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -647,7 +599,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-marine-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Marine Cameras</label>
+														<li><label for="ip-marine-cameras" onclick="ipMarineCaret()"><i id="ipMarine_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Marine Cameras</label>
 														<input type="checkbox" id="ip-marine-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -660,7 +612,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-ptz-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP PTZ Cameras</label>
+														<li><label for="ip-ptz-cameras" onclick="ipPTZCaret()"><i id="ipPTZ_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP PTZ Cameras</label>
 														<input type="checkbox" id="ip-ptz-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -691,7 +643,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-wifi-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;WiFi Cameras</label>
+														<li><label for="ip-wifi-cameras" onclick="ipWifiCaret()"><i id="ipWifi_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;WiFi Cameras</label>
 														<input type="checkbox" id="ip-wifi-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -710,17 +662,17 @@
 													<!-- /LVL4 -->
 												</div>
 											</li>
-											<li><label for="ip-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Recorders</label>
+											<li><label for="ip-recorders" onclick="ipRecordersCaret()"><i id="ipRecorders_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Recorders</label>
 											<input type="checkbox" id="ip-recorders" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
-														<li><label for="ip-4k-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;4K Recorders</label>
+														<li><label for="ip-4k-recorders" onclick="ip4kRecordersCaret()"><i id="ip4kRecorders_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;4K Recorders</label>
 														<input type="checkbox" id="ip-4k-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
 																<ul class="lvl-5-menu">
-																	<li><label for="ip-6000k-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR6000K Series</label>
+																	<li><label for="ip-6000k-series" onclick="ipNVR6000kCaret()"><i id="ipNVR6000k_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR6000K Series</label>
 																	<input type="checkbox" id="ip-6000k-series" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- /LVL6 -->
@@ -731,7 +683,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ip-7500k-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR7500K Series</label>
+																	<li><label for="ip-7500k-series" onclick="ipNVR7500kCaret()"><i id="ipNVR7500k_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR7500K Series</label>
 																	<input type="checkbox" id="ip-7500k-series" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- /LVL6 -->
@@ -743,7 +695,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ip-8000k-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR8000K Series</label>
+																	<li><label for="ip-8000k-series" onclick="ipNVR8000kCaret()"><i id="ipNVR8000k_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR8000K Series</label>
 																	<input type="checkbox" id="ip-8000k-series" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- /LVL6 -->
@@ -757,7 +709,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-600v-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR600V Series</label>
+														<li><label for="ip-600v-series" onclick="ipNVR600vCaret()"><i id="ipNVR600v_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR600V Series</label>
 														<input type="checkbox" id="ip-600v-series" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -767,7 +719,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-700mp-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR700MP Series</label>
+														<li><label for="ip-700mp-series" onclick="ipNVR700mpCaret()"><i id="ipNVR700mp_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR700MP Series</label>
 														<input type="checkbox" id="ip-700mp-series" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -779,7 +731,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-700n-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR700N Series</label>
+														<li><label for="ip-700n-series" onclick="ipNVR700nCaret()"><i id="ipNVR700n_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR700N Series</label>
 														<input type="checkbox" id="ip-700n-series" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -791,7 +743,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-700ns-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR700NS Series</label>
+														<li><label for="ip-700ns-series" onclick="ipNVR700nsCaret()"><i id="ipNVR700ns_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR700NS Series</label>
 														<input type="checkbox" id="ip-700ns-series" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -803,7 +755,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-8000-series"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR8000 Series</label>
+														<li><label for="ip-8000-series" onclick="ipNVR8000Caret()"><i id="ipNVR8000_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;NVR8000 Series</label>
 														<input type="checkbox" id="ip-8000-series" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -814,12 +766,12 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-specialty-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Specialty IP Recorders</label>
+														<li><label for="ip-specialty-recorders" onclick="ipNVRSpecialtyCaret()"><i id="ipNVRSpecialty_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Specialty IP Recorders</label>
 														<input type="checkbox" id="ip-specialty-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
 																<ul class="lvl-5-menu">
-																	<li><label for="ip-law-enforcement-nvrs"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Law Enforcement NVR's</label>
+																	<li><label for="ip-law-enforcement-nvrs" onclick="ipNVRLawCaret()"><i id="ipNVRLaw_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Law Enforcement NVR's</label>
 																	<input type="checkbox" id="ip-law-enforcement-nvrs" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- /LVL6 -->
@@ -829,7 +781,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ip-mobile-dvr"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Mobile NVR's</label>
+																	<li><label for="ip-mobile-dvr" onclick="ipNVRMobileCaret()"><i id="ipNVRMobile_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Mobile NVR's</label>
 																	<input type="checkbox" id="ip-mobile-dvr" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- /LVL6 -->
@@ -845,7 +797,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ip-wifi-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;WiFi Recorders</label>
+														<li><label for="ip-wifi-recorders" onclick="ipNVRwifiCaret()"><i id="ipNVRwifi_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;WiFi Recorders</label>
 														<input type="checkbox" id="ip-wifi-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -864,12 +816,12 @@
 									</div>
 								</li>
 								
-								<li><label for="intercom-systems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Intercom Systems</label>
+								<li><label for="intercom-systems" onclick="intercomSystemsCaret()"><i id="intercomSystems_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Intercom Systems</label>
 								<input type="checkbox" id="intercom-systems" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<!-- LVL3 -->
 										<ul class="lvl-3-menu">
-											<li><label for="indoor-touch-panels"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Indoor Touch Panels</label>
+											<li><label for="indoor-touch-panels" onclick="intercomIndoorCaret()"><i id="intercomIndoor_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Indoor Touch Panels</label>
 											<input type="checkbox" id="indoor-touch-panels" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
@@ -882,7 +834,7 @@
 													<!-- /LVL4 -->
 												</div>
 											</li>
-											<li><label for="outdoor-camera-stations"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Outdoor Camera Stations</label>
+											<li><label for="outdoor-camera-stations" onclick="intercomOutdoorCaret()"><i id="intercomOutdoor_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Outdoor Camera Stations</label>
 											<input type="checkbox" id="outdoor-camera-stations" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
@@ -950,7 +902,7 @@
 									<li><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Mount Diagram</li></a>
 								<!-- FUTURE USE AFTER SIM REBUILD -- a href="http://icrealtime.com/icrv3/" target="mainframe">
 									<li>ICR v3 Menu Sim</li></a -->
-								<li><label for="icr-technician-software" onclick="techSoftwareFunction()"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;ICR Technician Software</label>
+								<li><label for="icr-technician-software" onclick="techSoftwareFunction()"><i id="techSoftwareFunction_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;ICR Technician Software</label>
 								<input type="checkbox" id="icr-technician-software" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<!-- LVL3 -->
@@ -998,17 +950,17 @@
 									<div class="lvl-2-div">
 										<!-- LVL3 -->
 										<ul class="lvl-3-menu">
-											<li><label for="ds-analog-systems"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Systems</label>
+											<li><label for="ds-analog-systems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Systems</label>
 											<input type="checkbox" id="ds-analog-systems" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
-														<li><label for="ds-analog-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Cameras</label>
+														<li><label for="ds-analog-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Cameras</label>
 														<input type="checkbox" id="ds-analog-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
 																<ul class="lvl-5-menu">
-																	<li><label for="ds-analog-box-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Box Cameras</label>
+																	<li><label for="ds-analog-box-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Box Cameras</label>
 																	<input type="checkbox" id="ds-analog-box-cameras" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -1021,7 +973,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ds-analog-bullet-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Bullet Cameras</label>
+																	<li><label for="ds-analog-bullet-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Bullet Cameras</label>
 																	<input type="checkbox" id="ds-analog-bullet-cameras" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -1041,7 +993,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ds-analog-covert-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Discete/Covert Cameras</label>
+																	<li><label for="ds-analog-covert-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Discete/Covert Cameras</label>
 																	<input type="checkbox" id="ds-analog-covert-cameras" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -1057,7 +1009,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ds-analog-dome-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Dome Cameras</label>
+																	<li><label for="ds-analog-dome-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Dome Cameras</label>
 																	<input type="checkbox" id="ds-analog-dome-cameras" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -1073,7 +1025,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ds-analog-license-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;License Plate Cameras</label>
+																	<li><label for="ds-analog-license-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;License Plate Cameras</label>
 																	<input type="checkbox" id="ds-analog-license-cameras" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -1083,7 +1035,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ds-analog-marine-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Marine Cameras</label>
+																	<li><label for="ds-analog-marine-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Marine Cameras</label>
 																	<input type="checkbox" id="ds-analog-marine-cameras" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -1094,7 +1046,7 @@
 																			<!-- /LVL6 -->
 																		</div>
 																	</li>
-																	<li><label for="ds-analog-ptz-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;PTZ Cameras</label>
+																	<li><label for="ds-analog-ptz-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;PTZ Cameras</label>
 																	<input type="checkbox" id="ds-analog-ptz-cameras" class="lvl-5-input">
 																		<div class="lvl-5-div">
 																			<!-- LVL6 -->
@@ -1114,7 +1066,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ds-analog-recorders"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Recorders</label>
+														<li><label for="ds-analog-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Analog Recorders</label>
 														<input type="checkbox" id="ds-analog-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -1195,7 +1147,7 @@
 												</div>
 											</li>
 
-											<li><label for="ds-hdavs-systems"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Systems</label>
+											<li><label for="ds-hdavs-systems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;HD AVS Systems</label>
 											<input type="checkbox" id="ds-hdavs-systems" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
@@ -1345,12 +1297,12 @@
 												</div>
 											</li>
 											
-											<li><label for="ds-ip-systems"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Systems</label>
+											<li><label for="ds-ip-systems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Systems</label>
 											<input type="checkbox" id="ds-ip-systems" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
 													<ul class="lvl-4-menu">
-														<li><label for="ds-ip-cameras"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Cameras</label>
+														<li><label for="ds-ip-cameras"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Cameras</label>
 														<input type="checkbox" id="ds-ip-cameras" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -1528,7 +1480,7 @@
 																<!-- /LVL5 -->
 															</div>
 														</li>
-														<li><label for="ds-ip-recorders"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Recorders</label>
+														<li><label for="ds-ip-recorders"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;IP Recorders</label>
 														<input type="checkbox" id="ds-ip-recorders" class="lvl-4-input">
 															<div class="lvl-4-div">
 																<!-- LVL5 -->
@@ -1681,7 +1633,7 @@
 													<!-- LVL4 -->
 												</div>
 											</li>
-											<li><label for="ds-intercom-systems"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Intercom Systems</label>
+											<li><label for="ds-intercom-systems"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Intercom Systems</label>
 											<input type="checkbox" id="ds-intercom-systems" class="lvl-3-input">
 												<div class="lvl-3-div">
 													<!-- LVL4 -->
@@ -1721,7 +1673,7 @@
 										<!-- /LVL3 -->
 									</div>
 								</li>
-								<li><label for="pm-manuals"><i id="3" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Manuals</label>
+								<li><label for="pm-manuals"><i id="" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Manuals</label>
 								<input type="checkbox" id="pm-manuals" class="lvl-2-input">
 									<div class="lvl-2-div">
 										<!-- LVL3 -->
