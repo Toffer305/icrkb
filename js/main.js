@@ -10,6 +10,7 @@ function productInfoFunction() {
 		x.className = "fa fa-caret-right";
 	}
 }
+
 function softwareFunction() {
 	document.getElementById("mainframe").src = "pages/software-landing.html";
 	
@@ -21,22 +22,11 @@ function softwareFunction() {
 		x.className = "fa fa-caret-right";
 	}
 }
+
 function techToolsFunction() {
 	document.getElementById("mainframe").src = "pages/tech-tools-landing.html";
 	
 	var x = document.getElementById("3");
-	// If "+" exist, overwrite it with "-"
-	if (x.className === "fa fa-caret-right") {
-		x.className = "fa fa-caret-down";
-	} else {
-		x.className = "fa fa-caret-right";
-	}
-}
-
-function techSoftwareFunction() {
-	document.getElementById("mainframe").src = "pages/tech-software-landing.html";
-	
-	var x = document.getElementById("techSoftwareFunction_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";
@@ -90,6 +80,80 @@ function ipSystemsCaret() {
 
 function intercomSystemsCaret() {
 	var x = document.getElementById("intercomSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+// TECH TOOLS
+function techSoftwareFunction() {
+	document.getElementById("mainframe").src = "pages/tech-software-landing.html";
+	
+	var x = document.getElementById("techSoftwareFunction_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+// WHITE TOOLS
+function quickReferenceFunction() {
+	var x = document.getElementById("quickReference_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function quickStartFunction() {
+	var x = document.getElementById("quickStart_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dataSheetFunction() {
+	var x = document.getElementById("dataSheet_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function manualsFunction() {
+	var x = document.getElementById("manuals_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function howToNotesFunction() {
+	var x = document.getElementById("howToNotes_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function faqsFunction() {
+	var x = document.getElementById("faqs_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";
@@ -171,6 +235,88 @@ function intercomIndoorCaret() {
 
 function intercomOutdoorCaret() {
 	var x = document.getElementById("intercomOutdoor_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+// DATASHEETS
+function dsAnalogSystemsCaret() {
+	var x = document.getElementById("dsAnalogSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsHdavsSystemsCaret() {
+	var x = document.getElementById("dsHdavsSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpSystemsCaret() {
+	var x = document.getElementById("dsIpSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIntercomSystemsCaret() {
+	var x = document.getElementById("dsIntercomSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+// MANUALS
+function pmAnalogSystemsCaret() {
+	var x = document.getElementById("pmAnalogSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmHdavsSystemsCaret() {
+	var x = document.getElementById("pmHdavsSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmIpSystemsCaret() {
+	var x = document.getElementById("pmIpSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmIntercomSystemsCaret() {
+	var x = document.getElementById("pmIntercomSystems_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";
@@ -492,6 +638,170 @@ function ipNVRwifiCaret() {
 		x.className = "fa fa-caret-right";
 	}
 }
+
+// DATASHEETS
+function dsAnalogCamerasCaret() {
+	var x = document.getElementById("dsAnalogCameras_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogRecordersCaret() {
+	var x = document.getElementById("dsAnalogRecorders_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsHdavs1080Caret() {
+	var x = document.getElementById("dsHdavs1080_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsHdavs720Caret() {
+	var x = document.getElementById("dsHdavs720_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpCamerasCaret() {
+	var x = document.getElementById("dsIpCameras_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpRecordersCaret() {
+	var x = document.getElementById("dsIpRecorders_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIntercomIndoorCaret() {
+	var x = document.getElementById("dsIntercomIndoor_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIntercomOutdoorCaret() {
+	var x = document.getElementById("dsIntercomOutdoor_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+// MANUALS
+function pmAnalogCamerasCaret() {
+	var x = document.getElementById("pmAnalogCameras_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmAnalogRecordersCaret() {
+	var x = document.getElementById("pmAnalogRecorders_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmHdavs1080Caret() {
+	var x = document.getElementById("pmHdavs1080_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmHdavs720Caret() {
+	var x = document.getElementById("pmHdavs720_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmIpCamerasCaret() {
+	var x = document.getElementById("pmIpCameras_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmIpRecordersCaret() {
+	var x = document.getElementById("pmIpRecorders_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmIntercomIndoorCaret() {
+	var x = document.getElementById("pmIntercomIndoor_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function pmIntercomOutdoorCaret() {
+	var x = document.getElementById("pmIntercomOutdoor_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+
 
 // lvl-5-menu -----------------------------------------
 // ANALOG -----------------------------------------
