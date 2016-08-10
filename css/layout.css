@@ -185,7 +185,6 @@ img {
 	.software-image {
 		float: left;
 		max-width: 29%;
-		border: 1px dashed grey;
 		margin: 3% 1%;
 	}
 	
@@ -236,10 +235,6 @@ img {
 	
 	.colored {
 		color: #6495ed; /* Cornflower Blue */
-	}
-	
-	.colored:hover {
-
 	}
 
 	.related-wrapper-item {
