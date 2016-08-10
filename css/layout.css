@@ -142,6 +142,13 @@ img {
 	list-style-type: upper-roman;
 }
 
+.toc-description {
+	float: left;
+	width: 70%;
+	padding: 10px;
+	text-align: justify;
+}
+
 /* /General CSS */
 
 /* PRODUCT SECTION */	
@@ -174,6 +181,27 @@ img {
 
 
 /* SOFTWARE SECTION */
+	
+	.software-image {
+		float: left;
+		max-width: 29%;
+		border: 1px dashed grey;
+		margin: 3% 1%;
+	}
+	
+	.software-description {
+		padding: 0;
+		margin: 1%;
+		float: left;
+		max-width: 66%;
+		list-style-type:disc
+	}
+	
+	.software-description ul {
+		list-style-type:disc;
+		margin: 1em 0 1em 25px; 
+	}
+	
 	.software-wrapper {
 		padding: 0;
 		margin: 0;
@@ -187,20 +215,6 @@ img {
 
 		-webkit-flex-flow: row wrap;
 		justify-content: space-around;
-	}
-
-	.software-wrapper-item {
-		padding: 5px;
-		width: 36%;
-		height: auto;
-		margin-top: 10px;
-	}
-	
-	.software-wrapper-item:first-child {
-		padding: 15px;
-		width: 60%;
-		height: auto;
-		margin-top: 10px;
 	}
 	
 	.download-wrapper {
@@ -228,7 +242,6 @@ img {
 
 	}
 
-	
 	.related-wrapper-item {
 		padding: 10px;
 		width: 48%;
