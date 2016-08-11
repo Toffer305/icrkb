@@ -7,11 +7,45 @@ body {
 	body {
 		font-size: 16px;
 	}
+	
+	.menu-icon-section {
+		padding: 6px 20px 6px 30px;
+	}
+	
+	.search-area {
+		width: 275px;
+	}
+
+	/* search box*/
+	.search-input {
+		width:225px;
+	}
+
+	.search-input:focus {
+		
+	}
 }
 
 
 @media screen and (max-width: 1024px) {
 	body {
 		font-size: 15px;
+	}
+	
+	.menu-icon-section {
+		padding: 6px 15px 6px 30px;
+	}
+	
+	.search-area {
+		width: 245px;
+	}
+
+	/* search box*/
+	.search-input {
+		width:200px;
+	}
+
+	.search-input:focus {
+		
 	}
 }

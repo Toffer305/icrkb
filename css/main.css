@@ -17,6 +17,7 @@ body {
 
 .container {
 	width: 100% !important;
+	min-width: 1023px;
 	height: 100% !important;
 	position: absolute;
 	top: 0;
@@ -170,7 +171,7 @@ img {
 /* NAVIGATION SECTION - left side */
 .navigation {
 	width: 20%; 
-
+	min-width: 215px;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
