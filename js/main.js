@@ -925,7 +925,317 @@ function ipNVRMobileCaret() {
 	}
 }
 
+//DATASHEETS
+function dsAnalogBoxCaret() {
+	var x = document.getElementById("dsAnalogBox_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
 
+function dsAnalogBulletCaret() {
+	var x = document.getElementById("dsAnalogBullet_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
 
+function dsAnalogCovertCaret() {
+	var x = document.getElementById("dsAnalogCovert_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogDomeCaret() {
+	var x = document.getElementById("dsAnalogDome_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogLicenseCaret() {
+	var x = document.getElementById("dsAnalogLicense_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogMarineCaret() {
+	var x = document.getElementById("dsAnalogMarine_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogPTZCaret() {
+	var x = document.getElementById("dsAnalogPTZ_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogComboCaret() {
+	var x = document.getElementById("dsAnalogCombo_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogFlexCaret() {
+	var x = document.getElementById("dsAnalogFlex_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogMaxCaret() {
+	var x = document.getElementById("dsAnalogMax_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsAnalogSpecialtyCaret() {
+	var x = document.getElementById("dsAnalogSpecialty_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+// HDAVS -----------------------------------------
+function dsHdavs1080CamerasCaret() {
+	var x = document.getElementById("dsHdavs1080Cameras_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsHdavs1080RecordersCaret() {
+	var x = document.getElementById("dsHdavs1080Recorders_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsHdavs720CamerasCaret() {
+	var x = document.getElementById("dsHdavs720Cameras_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsHdavs720RecordersCaret() {
+	var x = document.getElementById("dsHdavs720Recorders_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+// IP -----------------------------------------
+function dsIp360Caret() {
+	var x = document.getElementById("dsIp360_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIp720Caret() {
+	var x = document.getElementById("dsIp720_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpBoxCaret() {
+	var x = document.getElementById("dsIpBox_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpBulletCaret() {
+	var x = document.getElementById("dsIpBullet_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpDomeCaret() {
+	var x = document.getElementById("dsIpDome_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpMarineCaret() {
+	var x = document.getElementById("dsIpMarine_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpPTZCaret() {
+	var x = document.getElementById("dsIpPTZ_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpWifiCaret() {
+	var x = document.getElementById("dsIpWifi_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIp4kRecordersCaret() {
+	var x = document.getElementById("dsIp4kRecorders_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpNVR600vCaret() {
+	var x = document.getElementById("dsIpNVR600v_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpNVR700mpCaret() {
+	var x = document.getElementById("dsIpNVR700mp_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpNVR700nCaret() {
+	var x = document.getElementById("dsIpNVR700n_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpNVR700nsCaret() {
+	var x = document.getElementById("dsIpNVR700ns_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpNVR8000Caret() {
+	var x = document.getElementById("dsIpNVR8000_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpNVRSpecialtyCaret() {
+	var x = document.getElementById("dsIpNVRSpecialty_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function dsIpNVRwifiCaret() {
+	var x = document.getElementById("dsIpNVRwifi_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
 // lvl-6-menu -----------------------------------------
 
