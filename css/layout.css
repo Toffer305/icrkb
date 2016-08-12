@@ -155,12 +155,12 @@ img {
 	.legend {
 		width: 98%;
 		margin: auto;
-		border: 1px dashed grey;
-		line-height: 1.5em;		
+		line-height: 1.5em;
+		text-align: justify;
 	}
 	
 	.legend th {
-		font-size: 1.5em;
+		font-size: 1.25em;
 		font-weight: 900;
 		line-height: 2em;
 	}
@@ -168,8 +168,12 @@ img {
 	.legend tr {
 		width: 75%;
 		height: 3em;
-		border: 1px solid grey;
+		border-bottom: 1px solid grey;
 		padding: 10px;
+	}
+	
+	.legend tr:last-child {
+		border-bottom: none;
 	}
 	
 	.legend tr:nth-child(even) {
@@ -180,6 +184,7 @@ img {
 		padding: 10px 25px;
 	}
 	
+	.legend tr th:first-child,
 	.legend tr td:first-child {
 		width: 25%;
 		text-align: center;
