@@ -156,7 +156,6 @@ img {
 		width: 98%;
 		margin: auto;
 		border: 1px dashed grey;
-		background-color: #dddddd;
 		line-height: 1.5em;		
 	}
 	
@@ -171,6 +170,10 @@ img {
 		height: 3em;
 		border: 1px solid grey;
 		padding: 10px;
+	}
+	
+	.legend tr:nth-child(even) {
+		background-color: #b7b7b7;
 	}
 	
 	.legend tr td:first-child {
