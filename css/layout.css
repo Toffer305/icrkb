@@ -151,6 +151,35 @@ img {
 
 /* /General CSS */
 
+/* About the ICRKB */
+	.legend {
+		width: 98%;
+		margin: auto;
+		border: 1px dashed grey;
+		background-color: #dddddd;
+		line-height: 1.5em;		
+	}
+	
+	.legend th {
+		font-size: 1.5em;
+		font-weight: 900;
+		line-height: 2em;
+	}
+
+	.legend tr {
+		width: 75%;
+		height: 3em;
+		border: 1px solid grey;
+		padding: 10px;
+	}
+	
+	.legend tr td:first-child {
+		width: 25%;
+		text-align: center;
+		font-size: 1.5em;
+		padding-top: 12px;
+	}
+
 /* PRODUCT SECTION */	
 	.indent1 {
 		padding-left: 30px;

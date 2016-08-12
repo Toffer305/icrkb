@@ -23,6 +23,16 @@ function salesMarketingCaret() {
 	}
 }
 
+function salesMarketingCaret() {
+	var x = document.getElementById("salesMarketing_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
 function softwareCaret() {
 	document.getElementById("mainframe").src = "pages/software-landing.html";
 	
@@ -92,6 +102,37 @@ function ipSystemsCaret() {
 
 function intercomSystemsCaret() {
 	var x = document.getElementById("intercomSystems_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+// SALES / MARKETING
+function dealerFormsCaret() {
+	var x = document.getElementById("dealerForms_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function salesToolsCaret() {
+	var x = document.getElementById("salesTools_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function socialMediaCaret() {
+	var x = document.getElementById("socialMedia_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";

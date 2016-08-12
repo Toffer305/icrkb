@@ -23,9 +23,17 @@
 	-------------------------------------------------------------------------------------------
 	Caret Down			................	<i class="fa fa-caret-down" aria-hidden="true"></i>
 	Caret Right 		................	<i class="fa fa-caret-right" aria-hidden="true"></i>
+	
+	Circular Up Arrow	................	<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+	
 	File Text			................	<i class="fa fa-file-text" aria-hidden="true"></i>
 	File Excel			................	<i class="fa fa-file-excel-o" aria-hidden="true"></i>
 	File PDF			................	<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+	File Image			................	<i class="fa fa-file-image-o" aria-hidden="true"></i>
+	File Zip			................	<i class="fa fa-file-archive-o" aria-hidden="true"></i>
+	Video File (Camera)	................	<i class="fa fa-file-video-o" aria-hidden="true"></i>
+	Dealer App (Money)	................	<i class="fa fa-money" aria-hidden="true"></i>
+	Credit App (Credit) ................	<i class="fa fa-credit-card" aria-hidden="true"></i>
 	User Secret 		................	<i class="fa fa-user-secret" aria-hidden="true"></i>
 	Codes				................	<i class="fa fa-code" aria-hidden="true"></i>
 	Line Chart			................	<i class="fa fa-line-chart" aria-hidden="true"></i>
@@ -33,16 +41,26 @@
 	Phone				................	<i class="fa fa-phone" aria-hidden="true"></i>
 	Bug					................	<i class="fa fa-bug" aria-hidden="true"></i>
 	Download			................	<i class="fa fa-download" aria-hidden="true"></i>
+	
 	RSS					................	<i class="fa fa-rss" aria-hidden="true"></i>
 	Calendar			................	<i class="fa fa-calendar" aria-hidden="true"></i>
-	Menu				................	<i class="fa fa-bars" aria-hidden="true"></i>
-	Search				................	<i class="fa fa-search" aria-hidden="true"></i>
 	Slack				................	<i class="fa fa-slack" aria-hidden="true"></i>
+	
+	Menu				................	<i class="fa fa-bars" aria-hidden="true"></i>
+	
+	Search				................	<i class="fa fa-search" aria-hidden="true"></i>
+	
+	
 	Windows				................	<i class="fa fa-windows" aria-hidden="true"></i>
 	Android				................	<i class="fa fa-android" aria-hidden="true"></i>
 	Apple				................	<i class="fa fa-apple" aria-hidden="true"></i>
-	Circular Up Arrow	................	<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
-	Video File (Camera)	................	<i class="fa fa-file-video-o" aria-hidden="true"></i>
+	
+	Facebook			................	<i class="fa fa-facebook-official" aria-hidden="true"></i>
+	LinkedIN			................	<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+	Google+				................	<i class="fa fa-google-plus-official" aria-hidden="true"></i>
+	Instagram			................	<i class="fa fa-instagram" aria-hidden="true"></i>
+	YouTube				................	<i class="fa fa-youtube-square" aria-hidden="true"></i>
+	
 -->
 
 <head>
@@ -1392,8 +1410,57 @@
 			<div class="lvl-1-div">								
 				<!-- LVL2 -->
 				<ul class="lvl-2-menu">
-					<a href="" target="mainframe"><li><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;</li></a>
-					<a href="" target="mainframe"><li><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;</li></a>
+					<li>
+						<label for="dealer-forms" onclick="dealerFormsCaret()">
+							<i id="dealerForms_i" class="fa fa-caret-right" aria-hidden="true"></i>
+							&nbsp;Dealer Forms
+						</label>
+					<input type="checkbox" id="dealer-forms" class="lvl-2-input">
+						<div class="lvl-2-div">
+							<!-- LVL3 -->
+							<ul class="lvl-3-menu">
+								<a href="" target="mainframe"><li><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Credit Application</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Dealer Application</li></a>
+							</ul>
+							<!-- /LVL3 -->
+						</div>
+					</li>
+					<li>
+						<label for="sales-tools" onclick="salesToolsCaret()">
+							<i id="salesTools_i" class="fa fa-caret-right" aria-hidden="true"></i>
+							&nbsp;Sales Tools
+						</label>
+					<input type="checkbox" id="sales-tools" class="lvl-2-input">
+						<div class="lvl-2-div">
+							<!-- LVL3 -->
+							<ul class="lvl-3-menu">
+								<a href="" target="mainframe"><li><i class="fa fa-file-archive-o" aria-hidden="true"></i>&nbsp;Ads & Marketing</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-file-archive-o" aria-hidden="true"></i>&nbsp;Kit Templates</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-file-archive-o" aria-hidden="true"></i>&nbsp;Logo Images</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-file-archive-o" aria-hidden="true"></i>&nbsp;Product Images</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-file-video-o" aria-hidden="true"></i>&nbsp;Webinars</li></a>								
+							</ul>
+							<!-- /LVL3 -->
+						</div>
+					</li>
+					<li>
+						<label for="social-media" onclick="socialMediaCaret()">
+							<i id="socialMedia_i" class="fa fa-caret-right" aria-hidden="true"></i>
+							&nbsp;Social Media
+						</label>
+					<input type="checkbox" id="social-media" class="lvl-2-input">
+						<div class="lvl-2-div">
+							<!-- LVL3 -->
+							<ul class="lvl-3-menu">
+								<a href="" target="mainframe"><li><i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;Facebook</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-google-plus-official" aria-hidden="true"></i>&nbsp;Google+</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;Instagram</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;LinkedIN</li></a>
+								<a href="" target="mainframe"><li><i class="fa fa-youtube-square" aria-hidden="true"></i>&nbsp;YouTube</li></a>
+							</ul>
+							<!-- /LVL3 -->
+						</div>
+					</li>
 				</ul>
 				<!-- /LVL2 -->
 			</div>

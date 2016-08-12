@@ -9,6 +9,7 @@
 		<link rel='stylesheet' href='../css/layout.css' type='text/css' media='all' />
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel='stylesheet' href='../css/social.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='../fonts/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
 	</head>
 	
 	<body>
@@ -16,24 +17,185 @@
 		<div class="content-section">
 			<div class="inner-section">
 				<h1>About the Knowledge Base</h1>
-				<p></p>
-				<hr>
-				<!-- Stylize Introduction... Different header tag than H1 perhaps -->
-				<h1>Introduction</h1>
-				Hellos.
-				<p> <br>
-				Thousands of hours have gone into technical documentation for IC Realtime products.  Hundreds of products have been developed, and hundreds of people have helped contribute, test, develop, debug, and document these devices across various mediums.  Spreadsheets, matrices, tables, documents, web sites, and even software applications have been developed to inform, educate, enlighten, support, and in general: imnprove the quality of life for Users and Technicians of our products alike.
-				<p> <br>
-				This KnowledgeBase exists to connect the dots.  To bridge the gap between the efforts of hundreds of people, over thousands of hours.  To integrate the integrable, and to enlighten those who are willing to search.
 				<hr>
 					<!-- VIDEO SECTION -->
-					<div style="border: outset 2px;">
+					<div style="border: outset 2px; width: 50%; margin: auto;">
 						<video width="98%" height="auto" autoplay loop controls>
 							<source src="../media/KnowledgeBaseDemo.mp4" type="video/mp4">
 							<source src="../media/KnowledgeBaseDemo.ogg" type="video/ogg">
 						Your browser does not support the video tag.
 						</video>
 					</div>
+				<!-- Stylize Introduction -->
+				<h2>Introduction</h2>
+				<p>Hellos.
+				<br><br>
+				Thousands of hours have gone into technical documentation for IC Realtime products.  Hundreds of products have been developed, and hundreds of people have helped contribute, test, develop, debug, and document these devices across various mediums.  Spreadsheets, matrices, tables, documents, web sites, and even software applications have been developed to inform, educate, enlighten, support, and in general: imnprove the quality of life for Users and Technicians of our products alike.
+				<br><br>
+				This KnowledgeBase exists to connect the dots.  To bridge the gap between the efforts of hundreds of people, over thousands of hours.  To integrate the integrable, and to enlighten those who are willing to search.
+				<p>
+				<hr>
+				<h2>Legend</h2>
+				<h3>The Top Bar</h3>
+				<table class="legend">
+					<tbody>
+						<tr>
+							<th>Icon</th>
+							<th>Definition / Usage</th>
+						</tr>
+						<tr>
+							<td><i class="fa fa-bars" aria-hidden="true"></i></td>
+							<td>Menu Icon - Utilized to show / hide the navigation panel</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kb-logo">
+									<a href="index.html">
+										<!--img src="images/logo.png" alt="IC Realtime" /-->
+										<i class="fa fa-lightbulb-o" aria-hidden="true"></i>&nbsp;ICR<span>KB</span>
+									</a>
+								</div>
+							</td>
+							<td>ICRKB - Reloads the site</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-slack" aria-hidden="true"></i></td>
+							<td>Slack - Symbol for Slack. This will launch the IC Realtime Slack website in a seperate browser window.</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-calendar" aria-hidden="true"></i></td>
+							<td>Calendar - Symbol for the calendar. Uses the IC Realtime google calendar to list scheduled calls and other events.</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-rss" aria-hidden="true"></i></td>
+							<td>RSS - Symbol for the RSS feed from Redmine</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-search" aria-hidden="true"></i></td>
+							<td>Search - Duh!</td>
+						</tr>
+					</tbody>
+				</table>
+				<br />
+				<h3>The Navigation Pane</h3>
+				<table class="legend">
+					<tbody>
+						<tr>
+							<th>Icon</th>
+							<th>Definition / Usage</th>
+						</tr>
+						<tr>
+							<td><i class="fa fa-caret-right" aria-hidden="true"></i></td>
+							<td>Caret Right - Indicates a expandable menu item</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-caret-down" aria-hidden="true"></i></td>
+							<td>Caret Down - Indicates a colapsible menu item</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+							<td>File Text - Indicates a text file or landing page</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-file-excel-o" aria-hidden="true"></i></td>
+							<td>File Excel - Indicates a Google Sheets or Excel sheet</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-file-pdf-o" aria-hidden="true"></i></td>
+							<td>File PDF - Indicates a PDF file</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-file-image-o" aria-hidden="true"></i></td>
+							<td>File Image - Indicates an image file</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-file-archive-o" aria-hidden="true"></i></td>
+							<td>File Zip - Indicates a zip file</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-file-video-o" aria-hidden="true"></i></td>
+							<td>Video File (Camera) - Indicates a video file</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-money" aria-hidden="true"></i></td>
+							<td>Dealer App (Money) - Symbol for the Dealer Application Form</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-credit-card" aria-hidden="true"></i></td>
+							<td>Credit App (Credit) - Symbol for the Credit Application Form</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-user-secret" aria-hidden="true"></i></td>
+							<td>User Secret - Symbol used to denote the Super User Passwords of the day.</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-code" aria-hidden="true"></i></td>
+							<td>Codes - Indicated a collection of codes for the topic</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-line-chart" aria-hidden="true"></i></td>
+							<td>Line Chart - Indicates a graph for the topic</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-heartbeat" aria-hidden="true"></i></td>
+							<td>Heartbeat - Symbol for the IC Rescue software</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-phone" aria-hidden="true"></i></td>
+							<td>Phone - Symbols for the IC Response software</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-bug" aria-hidden="true"></i></td>
+							<td>Bug - Symbol for the Redmine Project Manager</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-facebook-official" aria-hidden="true"></i></td>
+							<td>Facebook</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-linkedin-square" aria-hidden="true"></i></td>
+							<td>LinkedIN</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-google-plus-official" aria-hidden="true"></i></td>
+							<td>Google+</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-instagram" aria-hidden="true"></i></td>
+							<td>Instagram</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-youtube-square" aria-hidden="true"></i></td>
+							<td>YouTube</td>
+						</tr>
+					</tbody>
+				</table>
+				<br />
+				<h3>The Main Pane</h3>
+				<table class="legend">
+					<tbody>
+						<tr>
+							<td><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></td>
+							<td>Circular Up Arrow - Used to return to the top of the page</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-download" aria-hidden="true"></i></td>
+							<td>Download - Symbol for a download</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-windows" aria-hidden="true"></i></td>
+							<td>Windows - Symbol for Windows based software</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-android" aria-hidden="true"></i></td>
+							<td>Android - Symbol for Android based software</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-apple" aria-hidden="true"></i></td>
+							<td>Apple - Symbol for Apple based software</td>
+						</tr>
+					</tbody>
+				</table>
 				<hr>
 			</div>
 		</div>		
