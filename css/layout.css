@@ -150,29 +150,57 @@ img {
 	text-align: justify;
 }
 
-.standard-table {
+.standard-3-table {
 	width: 98%;
 	margin: auto;
 	line-height: 1.5em;
 }
 
-.standard-table th {
+.standard-3-table th {
 	font-weight: bolder;
 }
 
-.standard-table tr {
+.standard-3-table tr {
 	height: 3em;
 	border-bottom: 1px solid grey;
 }
 
-.standard-table td:nth-child(odd) {
+.standard-3-table td {
+	width: 33%;
+	padding: 10px;
+	text-align: center;
+
+}
+
+.standard-3-table td:nth-child(even) {
+	width: 34%;
+	padding: 10px;
+	background-color: #dddddd;
+}
+
+.standard-4-table {
+	width: 98%;
+	margin: auto;
+	line-height: 1.5em;
+}
+
+.standard-4-table th {
+	font-weight: bolder;
+}
+
+.standard-4-table tr {
+	height: 3em;
+	border-bottom: 1px solid grey;
+}
+
+.standard-4-table td:nth-child(odd) {
 	width: 10%;
 	padding: 10px;
 	text-align: center;
 	background-color: #dddddd;
 }
 
-.standard-table td:nth-child(even) {
+.standard-4-table td:nth-child(even) {
 	width: 40%;
 	padding: 10px;
 	text-align: justify;
