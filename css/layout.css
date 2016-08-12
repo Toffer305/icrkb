@@ -25,7 +25,8 @@ a {
 	cursor: pointer;
 }
 
-.justify {
+.justify,
+p {
 	text-align: justify;
 }
 
