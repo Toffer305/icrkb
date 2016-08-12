@@ -1,8 +1,8 @@
 // lvl-1-menu -----------------------------------------
-function productInfoFunction() {
+function productInfoCaret() {
 	document.getElementById("mainframe").src = "pages/products-landing.html";
 	
-	var x = document.getElementById("1");
+	var x = document.getElementById("productInfo_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";
@@ -11,10 +11,22 @@ function productInfoFunction() {
 	}
 }
 
-function softwareFunction() {
+function salesMarketingCaret() {
+	document.getElementById("mainframe").src = "pages/products-landing.html";
+	
+	var x = document.getElementById("salesMarketing_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function softwareCaret() {
 	document.getElementById("mainframe").src = "pages/software-landing.html";
 	
-	var x = document.getElementById("2");
+	var x = document.getElementById("software_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";
@@ -23,10 +35,10 @@ function softwareFunction() {
 	}
 }
 
-function techToolsFunction() {
+function techToolsCaret() {
 	document.getElementById("mainframe").src = "pages/tech-tools-landing.html";
 	
-	var x = document.getElementById("3");
+	var x = document.getElementById("techTools_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";
@@ -35,7 +47,7 @@ function techToolsFunction() {
 	}
 }
 
-function whitePaperFunction() {
+function whitePaperCaret() {
 	document.getElementById("mainframe").src = "pages/whitepapers-landing.html";
 	
 	var x = document.getElementById("4");
