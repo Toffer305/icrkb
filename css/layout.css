@@ -150,6 +150,34 @@ img {
 	text-align: justify;
 }
 
+.standard-table {
+	width: 98%;
+	margin: auto;
+	line-height: 1.5em;
+}
+
+.standard-table th {
+	font-weight: bolder;
+}
+
+.standard-table tr {
+	height: 3em;
+	border-bottom: 1px solid grey;
+}
+
+.standard-table td:nth-child(odd) {
+	width: 10%;
+	padding: 10px;
+	text-align: center;
+	background-color: #dddddd;
+}
+
+.standard-table td:nth-child(even) {
+	width: 40%;
+	padding: 10px;
+	text-align: justify;
+}
+
 /* /General CSS */
 
 /* About the ICRKB */
@@ -167,7 +195,6 @@ img {
 	}
 
 	.legend tr {
-		width: 75%;
 		height: 3em;
 		border-bottom: 1px solid grey;
 		padding: 10px;
