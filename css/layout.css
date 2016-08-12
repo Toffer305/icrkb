@@ -176,6 +176,10 @@ img {
 		background-color: #b7b7b7;
 	}
 	
+	.legend tr td {
+		padding: 10px 25px;
+	}
+	
 	.legend tr td:first-child {
 		width: 25%;
 		text-align: center;
