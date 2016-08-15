@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Output element sample</title>
+<body>
+    <article>
+        <form onsubmit="return false"
+		oninput="wireGauge.value = Math.round(wireRun.value * (Math.pow((1 + maxDrop.value / 100), currentLoad.value)) * 100) / 100;">
+            Length of wire run:&nbsp;<input name="wireRun" id="wireRun" type="number"> Feet
+            <br />
+            Current Load:&nbsp;<input name="currentLoad" id="currentLoad" type="number"> mAMPs (1000 mAMPs = 1 AMP)
+            <br />
+            Max voltage drop:&nbsp;<input name="maxDrop" id="maxDrop" type="number"> Volts
+            <br />
+            Wire Gauge:&nbsp;<output name="wireGauge" id="wireGauge" for="wireRun currentLoad maxDrop"></output>
+        </form>
+    </article>
+</body>
+ 
+</html>
