@@ -41,6 +41,7 @@
 	Phone				................	<i class="fa fa-phone" aria-hidden="true"></i>
 	Bug					................	<i class="fa fa-bug" aria-hidden="true"></i>
 	Download			................	<i class="fa fa-download" aria-hidden="true"></i>
+	Calculator			................	<i class="fa fa-calculator" aria-hidden="true"></i>
 	
 	RSS					................	<i class="fa fa-rss" aria-hidden="true"></i>
 	Calendar			................	<i class="fa fa-calendar" aria-hidden="true"></i>
@@ -127,7 +128,7 @@
 		<a href="pages/about-these-docs.html" target="mainframe"><li><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;About the Knowledge Base</li></a>
 	</ul>
 <hr>
-<!-- drop down menus for the WHITE PAPERS section - uses checkbox hack - valid classes include:
+<!-- drop down menus for the ICRKB NAV section - uses checkbox hack - valid classes include:
 	lvl-1-menu,		lvl-2-menu, 	lvl-3-menu, 	lvl-4-menu, 	lvl-5-menu,
 	lvl-1-div,		lvl-2-div, 		lvl-3-div, 		lvl-4-div, 		lvl-5-div,
 	lvl-1-input, 	lvl-2-input, 	lvl-3-input, 	lvl-4-input, 	lvl-5-input -->
@@ -1506,26 +1507,29 @@
 						<li><i class="fa fa-code" aria-hidden="true"></i>&nbsp;CGI Codes</li></a>
 					<a href="pages/RS232-codes.html" target="mainframe">
 						<li><i class="fa fa-code" aria-hidden="true"></i>&nbsp;RS232 Codes</li></a>
-					<a href="pages/mount-diagram.html" target="mainframe">
-						<li><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Mount Diagram</li></a>
-					<a href="http://www.icrealtime.com/support/online-tools/storage-calculator" target="mainframe">
-						<li>&nbsp;Storage Calculator</li></a>
-					<a href="http://www.icrealtime.com/support/online-tools/lens-size" target="mainframe">
-						<li>&nbsp;Lens Size Calculator</li></a>
-					<a href="http://icrealtime.com/support/online-tools/lens-fov" target="mainframe">
-						<li>&nbsp;Lens Field of View</li></a>
-					<a href="pages/illumination-chart.html" target="mainframe">
-						<li>&nbsp;Illumination Chart</li></a>
-					<a href="http://www.icrealtime.com/support/online-tools/wire-voltage-drop-calculator" target="mainframe">
-						<li>&nbsp;Wire Voltage Drop Calculator</li></a>
-					<a href="http://www.icrealtime.com/support/online-tools/wire-gauge-calculator" target="mainframe">
-						<li>&nbsp;Wire Gauge Calculator</li></a>
-					<a href="http://www.icrealtime.com/support/online-tools/power-calculator" target="mainframe">
-						<li>&nbsp;Power Calculator</li></a>
-					<a href="pages/IP-chart.html" target="mainframe">
-						<li>&nbsp;IP Code Chart</li></a>
 					<!-- FUTURE USE AFTER SIM REBUILD -- a href="http://icrealtime.com/icrv3/" target="mainframe">
 						<li>ICR v3 Menu Sim</li></a -->
+					<li><label for="tech-calculator-tools" onclick="techCalculatorTools()"><i id="techCalculatorTools_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;ICR Calculators</label>
+					<input type="checkbox" id="tech-calculator-tools" class="lvl-2-input">
+						<div class="lvl-2-div">
+							<!-- LVL3 -->
+							<ul class="lvl-3-menu">
+								<a href="http://icrealtime.com/support/online-tools/lens-fov" target="mainframe">
+									<li><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Lens Field of View</li></a>
+								<a href="http://www.icrealtime.com/support/online-tools/lens-size" target="mainframe">
+									<li><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Lens Size Calculator</li></a>
+								<a href="http://www.icrealtime.com/support/online-tools/power-calculator" target="mainframe">
+									<li><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Power Calculator</li></a>
+								<a href="http://www.icrealtime.com/support/online-tools/storage-calculator" target="mainframe">
+									<li><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Storage Calculator</li></a>
+								<a href="http://www.icrealtime.com/support/online-tools/wire-gauge-calculator" target="mainframe">
+									<li><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Wire Gauge Calculator</li></a>
+								<a href="http://www.icrealtime.com/support/online-tools/wire-voltage-drop-calculator" target="mainframe">
+									<li><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Wire Voltage Drop Calculator</li></a>
+							</ul>
+							<!-- /LVL3 -->
+						</div>
+					</li>
 					<li><label for="icr-technician-software" onclick="techSoftwareFunction()"><i id="techSoftwareFunction_i" class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;ICR Technician Software</label>
 					<input type="checkbox" id="icr-technician-software" class="lvl-2-input">
 						<div class="lvl-2-div">
@@ -1566,39 +1570,145 @@
 							<!-- LVL3 -->
 							<ul class="lvl-3-menu">
 								<!-- Audio -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_audio-setup-overview.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Audio Overview</li></a-->
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_audio-setup-overview.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;Audio Overview
+									</li>
+								</a>
 								<!--  -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_config-tool.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;ConfigTool Guide</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_config-tool.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;ConfigTool Guide
+									</li>
+								</a>
 								<!-- Field of View -->
-								<a href="whitepapers/QSG/Understanding-CCTV-FoV-AoV-FL.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Field of View</li></a>
+								<a href="whitepapers/QSG/Understanding-CCTV-FoV-AoV-FL.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;Field of View
+									</li>
+								</a>
 								<!-- ICR-SD1 -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_ICRSD1.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;ICR-SD1</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_ICRSD1.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;ICR-SD1
+									</li>
+								</a>
 								<!-- ICRSS Player -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_smarticrssplayer.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;ICRSS Player Guide</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_smarticrssplayer.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;ICRSS Player Guide
+									</li>
+								</a>
 								<!-- ICRSS Pro -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_ICRSS_Pro_V6.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;ICRSS Pro Guide</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_ICRSS_Pro_V6.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;ICRSS Pro Guide
+									</li>
+								</a>
+								<!-- Illumination Chart -->
+								<a href="pages/illumination-chart.html" target="mainframe">
+									<li>
+										<i class="fa fa-file-text" aria-hidden="true"></i>
+										&nbsp;Illumination Chart
+									</li>
+								</a>
+								<!-- IP Code Chart -->
+								<a href="pages/IP-chart.html" target="mainframe">
+									<li>
+										<i class="fa fa-file-text" aria-hidden="true"></i>
+										&nbsp;IP Code Chart
+									</li>
+								</a>
 								<!-- Integration -->
-								<a href="whitepapers/QSG/Doc_Integration.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Integration Guide</li></a>
+								<a href="whitepapers/QSG/Doc_Integration.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;Integration Guide
+									</li>
+								</a>
 								<!-- Integration Matrix -->
-								<a href="http://icrealtime.com/docs/quickstart/HTN_integration-compatibility-matrix.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Integration Matrix</li></a>
+								<a href="http://icrealtime.com/docs/quickstart/HTN_integration-compatibility-matrix.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;Integration Matrix
+									</li>
+								</a>
 								<!-- ITM9000 -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_ITM9000.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;ITM9000 Guide</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_ITM9000.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;ITM9000 Guide
+									</li>
+								</a>
+								<!-- Mounts Diagrams -->
+								<a href="pages/mount-diagram.html" target="mainframe">
+									<li>
+										<i class="fa fa-line-chart" aria-hidden="true"></i>
+										&nbsp;Mount Diagram
+									</li>
+								</a>
 								<!-- Networking Overview -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_network-setup-overview.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Networking Guide</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_network-setup-overview.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;Networking Guide
+									</li>
+								</a>
 								<!-- ONVIF -->
-								<a href="whitepapers/QSG/The-ONVIF-profile-matters.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;ONVIF Profiles</li></a>
+								<a href="whitepapers/QSG/The-ONVIF-profile-matters.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;ONVIF Profiles
+									</li>
+								</a>
 								<!-- Pelco-D -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_PELCOPTZ.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Pelco-D</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_PELCOPTZ.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;Pelco-D
+									</li>
+								</a>
 								<!-- P2P -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_P2P.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;P2P Service</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_P2P.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;P2P Service
+									</li>
+								</a>
 								<!-- PSS -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_PSS.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;PSS Guide</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_PSS.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;PSS Guide
+									</li>
+								</a>
 								<!-- SmartICRSS -->
-								<a href="http://icrealtime.com/docs/quickstart/QsG_SmartICRSS-Guide.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;SmartICRSS Guide</li></a>
+								<a href="http://icrealtime.com/docs/quickstart/QsG_SmartICRSS-Guide.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;SmartICRSS Guide
+									</li>
+								</a>
 								<!-- Smart ICRSS Alarms -->
-								<a href="http://www.icrealtime.com/docs/quickstart/QSG_SmartICRSS-Alarms.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;SmartICRSS Alarms</li></a>
+								<a href="http://www.icrealtime.com/docs/quickstart/QSG_SmartICRSS-Alarms.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;SmartICRSS Alarms
+									</li>
+								</a>
 								<!--  -->
-								<!--a href="whitepapers/QSG/.pdf" target="mainframe"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;</li></a-->
+								<!--a href="whitepapers/QSG/.pdf" target="mainframe">
+									<li>
+										<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+										&nbsp;
+									</li>
+								</a-->
 							</ul>
 						</div>
 					</li>

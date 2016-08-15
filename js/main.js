@@ -60,7 +60,7 @@ function techToolsCaret() {
 function whitePaperCaret() {
 	document.getElementById("mainframe").src = "pages/whitepapers-landing.html";
 	
-	var x = document.getElementById("4");
+	var x = document.getElementById("whitePaper_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";
@@ -146,6 +146,16 @@ function techSoftwareFunction() {
 	document.getElementById("mainframe").src = "pages/tech-software-landing.html";
 	
 	var x = document.getElementById("techSoftwareFunction_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
+function techCalculatorTools() {
+	var x = document.getElementById("techCalculatorTools_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
 		x.className = "fa fa-caret-down";
