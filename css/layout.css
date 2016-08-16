@@ -50,6 +50,12 @@ p {
 	text-align: right;
 }
 
+.center-image {
+	margin: auto;
+	padding: 0;
+	width: 50%;
+}
+
 h1 {
 	margin: auto;
 	padding: 10px 0 10px 0;
