@@ -12,18 +12,8 @@ function productInfoCaret() {
 }
 
 function salesMarketingCaret() {
-	document.getElementById("mainframe").src = "pages/products-landing.html";
+	document.getElementById("mainframe").src = "pages/sales-landing.html";
 	
-	var x = document.getElementById("salesMarketing_i");
-	// If "+" exist, overwrite it with "-"
-	if (x.className === "fa fa-caret-right") {
-		x.className = "fa fa-caret-down";
-	} else {
-		x.className = "fa fa-caret-right";
-	}
-}
-
-function salesMarketingCaret() {
 	var x = document.getElementById("salesMarketing_i");
 	// If "+" exist, overwrite it with "-"
 	if (x.className === "fa fa-caret-right") {
