@@ -59,6 +59,16 @@ function whitePaperCaret() {
 	}
 }
 
+function contactCaret() {
+	var x = document.getElementById("contact_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
 // lvl-2-menu -----------------------------------------
 function analogSystemsCaret() {
 	var x = document.getElementById("analogSystems_i");

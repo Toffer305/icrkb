@@ -241,6 +241,25 @@ img {
 	text-align: justify;
 }
 
+.flex-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.flex-item {
+	width: 30%;
+}
+
 /* /General CSS */
 
 /* About the ICRKB */
@@ -316,16 +335,17 @@ img {
 	
 	.software-image {
 		float: left;
-		max-width: 29%;
+		width: 30%;
 		margin: 3% 1%;
+		overflow: hidden;
 	}
 	
 	.software-description {
 		padding: 0;
 		margin: 1%;
 		float: left;
-		max-width: 66%;
-		list-style-type:disc
+		max-width: 65%;
+		list-style-type:disc;
 	}
 	
 	.software-description ul {
