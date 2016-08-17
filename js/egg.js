@@ -299,14 +299,3 @@ Egg.prototype.addHook = Egg.prototype.AddHook;
      console.log("Hook called for: " + this.activeEgg.keys);
      console.log(this.activeEgg.metadata);
    }).Listen();
-   
-// Toasty
- var egg = new Egg();
- egg
-   .AddCode("up,down,up,down,left,right,left,right,a,b", function() {
-     document.getElementById("mainframe").src = "toasty-master/demo.html";
-   }, "other-code")
-  .AddHook(function(){
-     console.log("Hook called for: " + this.activeEgg.keys);
-     console.log(this.activeEgg.metadata);
-   }).Listen();
