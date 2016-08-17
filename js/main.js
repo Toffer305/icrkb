@@ -143,7 +143,7 @@ function socialMediaCaret() {
 
 // TECH TOOLS
 function techSoftwareFunction() {
-	document.getElementById("mainframe").src = "pages/tech-software-landing.html";
+	//document.getElementById("mainframe").src = "pages/tech-software-landing.html";
 	
 	var x = document.getElementById("techSoftwareFunction_i");
 	// If "+" exist, overwrite it with "-"
