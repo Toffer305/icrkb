@@ -310,3 +310,16 @@ Egg.prototype.addHook = Egg.prototype.AddHook;
      console.log("Hook called for: " + this.activeEgg.keys);
      console.log(this.activeEgg.metadata);
    }).Listen();
+   
+   
+
+// web-dude.html
+ var egg = new Egg();
+ egg
+   .AddCode("left,right,up,down,a,b", function() {
+     document.getElementById("mainframe").src = "pages/web-dude.html";
+   }, "konami-code")
+  .AddHook(function(){
+     console.log("Hook called for: " + this.activeEgg.keys);
+     console.log(this.activeEgg.metadata);
+   }).Listen();
