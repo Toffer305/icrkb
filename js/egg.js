@@ -299,3 +299,14 @@ Egg.prototype.addHook = Egg.prototype.AddHook;
      console.log("Hook called for: " + this.activeEgg.keys);
      console.log(this.activeEgg.metadata);
    }).Listen();
+   
+// ICR Games
+ var egg = new Egg();
+ egg
+   .AddCode("up,down,left,right,a,b", function() {
+     document.getElementById("mainframe").src = "jsnes-master/index.html";
+   }, "konami-code")
+  .AddHook(function(){
+     console.log("Hook called for: " + this.activeEgg.keys);
+     console.log(this.activeEgg.metadata);
+   }).Listen();
