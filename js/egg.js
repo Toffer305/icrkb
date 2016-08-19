@@ -292,7 +292,7 @@ Egg.prototype.addHook = Egg.prototype.AddHook;
 // ICR Excuse Generator
  var egg = new Egg();
  egg
-   .AddCode("up,up,down,down,left,right,left,right,b,a", function() {
+   .AddCode("ctrl,alt,enter", function() {
      document.getElementById("mainframe").src = "toasty-master/icr-excuse-gen.html";
    }, "konami-code")
   .AddHook(function(){
@@ -303,7 +303,7 @@ Egg.prototype.addHook = Egg.prototype.AddHook;
 // ICR Games
  var egg = new Egg();
  egg
-   .AddCode("up,down,left,right,a,b", function() {
+   .AddCode("up,up,down,down,left,right,left,right,b,a", function() {
      document.getElementById("mainframe").src = "jsnes-master/index.html";
    }, "konami-code")
   .AddHook(function(){
@@ -316,7 +316,7 @@ Egg.prototype.addHook = Egg.prototype.AddHook;
 // web-dude.html
  var egg = new Egg();
  egg
-   .AddCode("left,right,up,down,a,b", function() {
+   .AddCode("esc,space,tab", function() {
      document.getElementById("mainframe").src = "pages/web-dude.html";
    }, "konami-code")
   .AddHook(function(){
