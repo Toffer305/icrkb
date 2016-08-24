@@ -164,6 +164,16 @@ function techCalculatorTools() {
 	}
 }
 
+function thirdPartySoftwareFunction() {
+	var x = document.getElementById("thirdPartySoftwareFunction_i");
+	// If "+" exist, overwrite it with "-"
+	if (x.className === "fa fa-caret-right") {
+		x.className = "fa fa-caret-down";
+	} else {
+		x.className = "fa fa-caret-right";
+	}
+}
+
 // WHITE TOOLS
 function quickReferenceFunction() {
 	var x = document.getElementById("quickReference_i");
