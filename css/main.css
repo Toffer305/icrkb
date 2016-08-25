@@ -373,6 +373,39 @@ div.right-side-feed-section {
 /* /Toggled State */
 /*  /RIGHT SIDE FEED SECTION - right side */
 
+
+/*  RIGHT SIDE EMAIL SECTION - right side */
+/* Default State */
+div.right-side-email-section {
+	width:20%;
+	z-index: 20;
+	position: fixed;
+	left: 40%;
+	top: 56px;
+	padding: 25px;
+	background-color: #1f1f1f;
+	color: #fff;
+	text-align: center;
+	display: none;
+	border: 3px double #fff;
+	
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+/* /Default State */
+
+/* Toggled State */
+.right-side-email-input[type=checkbox]:checked ~ div.right-side-email-section {
+	display: block;
+}
+/* /Toggled State */
+/*  /RIGHT SIDE EMAIL SECTION - right side */
+
+
+
 /*  RIGHT SIDE CAL SECTION - right side */
 /* Default State */
 div.right-side-cal-section {

@@ -49,6 +49,7 @@
 	RSS					................	<i class="fa fa-rss" aria-hidden="true"></i>
 	Calendar			................	<i class="fa fa-calendar" aria-hidden="true"></i>
 	Slack				................	<i class="fa fa-slack" aria-hidden="true"></i>
+	Share				................	<i class="fa fa-share-alt" aria-hidden="true"></i>
 	
 	Menu				................	<i class="fa fa-bars" aria-hidden="true"></i>
 	
@@ -96,6 +97,7 @@
 <div class="container">
 
 <input type="checkbox" id="rss-icon" class="right-side-feed-input">
+<input type="checkbox" id="email-icon" class="right-side-email-input">
 <!--input type="checkbox" id="cal-icon" class="right-side-cal-input"-->
 <input type="checkbox" id="menu-icon" class="menu-input">
 
@@ -131,10 +133,12 @@
 		<a href="https://icrealtime.slack.com" target="_blank">
 			<i class="fa fa-slack" aria-hidden="true"></i>
 		</a>
-	</div>	
-	<script>
-		
-	</script>
+	</div>
+	<div class="tools-icon">
+		<label for="email-icon" onclick="emailThisFunction()">
+			<i class="fa fa-share-alt" aria-hidden="true"></i>
+		</label>				
+	</div>
 </div>
 <!-- TOP BAR SECTION - defines the area for the google search function -->
 <nav id="main-navigation" class="navigation">
@@ -3294,6 +3298,13 @@
 </div>
 <!-- /PAGE WRAP section - the main page area (right side) -->
 
+<div class="right-side-email-section">
+	How would you like to share this link?
+	<hr>
+	Send this in  an email?&nbsp;
+	<a href="" id="mailButton"><button>Confirm</button></a>
+</div>
+
 <!-- RIGHT SIDE FEED section -->
 <div class="right-side-feed-section">
 	<!-- start feedwind code -->
@@ -3308,6 +3319,9 @@
 		</div>
 	<!--  end  feedwind code -->
 </div>
+<!-- /RIGHT SIDE FEED section -->
+</div>
+
 <!-- /RIGHT SIDE FEED section -->
 </div>
 <div style="clear: both;"></div>

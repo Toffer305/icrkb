@@ -1,3 +1,9 @@
+function emailThisFunction() {
+	var x = document.getElementById("mainframe").src;
+	
+	document.getElementById("mailButton").href = "mailto:?subject=IC%20Realtime%20Tech%20Support&body=Here is your link from IC Realtime Support: " + x;
+}
+
 // lvl-1-menu -----------------------------------------
 function productInfoCaret() {
 	document.getElementById("mainframe").src = "pages/products-landing.html";
